@@ -1,0 +1,27 @@
+Package: MIRIMFA
+Type: Package
+Title: Multiple Imputation by Regularised Iterative Multiple Factor Analysis
+Version: 0.1.0
+Author: Rodrigo Olivera
+Maintainer: Rodrigo Olivera <rmmolivera@tutanota.es>
+Description: Imputation of mixed datasets grouped by variable; Missing values are multiply imputed with a multiple factor analysis (MFA) model.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0)
+Imports: FactoMineR, 
+          missMDA, 
+          ggplot2,
+          graphics,
+          grDevices,
+          mice,
+          mvtnorm,
+          stats,
+          utils,
+          doParallel,
+          parallel,
+          foreach, 
+          here, 
+          factoextra,
+          polycor
+RoxygenNote: 7.3.1
