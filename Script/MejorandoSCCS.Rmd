@@ -26,11 +26,12 @@ header-includes:
   - \usepackage{booktabs}
   - \usepackage{hyperref}
   - \usepackage{fourier}
+  - \usepackage{csquotes}
   - \linespread{1.35}
   - \usepackage{geometry}
   - \renewcommand{\topfraction}{.85}
   - \renewcommand{\bottomfraction}{.7}
-  - \renewcommand{\textfraction}{.15}
+  - \renewcommand{\textfraction}{.20}
   - \renewcommand{\floatpagefraction}{.66}
   - \setcounter{topnumber}{3}
   - \setcounter{bottomnumber}{3}
@@ -46,10 +47,10 @@ knitr::opts_chunk$set(echo = F,
 ```
 
 \begin{abstract}
-La Muestra Estándar Intercultural («Standard Cross-Cultural Sample», SCCS), compilada por Murdock y White, sirve como base de datos de información etnográfica de diversas sociedades, lo que facilita los estudios interculturales y la comprensión de la diversidad humana. 
+La Muestra Estándar Intercultural (\textquote{Standard Cross-Cultural Sample}, SCCS), compilada por Murdock y White, sirve como base de datos de información etnográfica de diversas sociedades, lo que facilita los estudios interculturales y la comprensión de la diversidad humana. 
 Sin embargo, la naturaleza estática de la SCCS y los retos que plantean los datos faltantes limitan su utilidad para la investigación moderna. 
 Esta tesina propone un enfoque metodológico para mejorar la SCCS mediante la creación de una encuesta dirigida basada en el conjunto de datos original. 
-La metodología consiste en aplicar el Análisis de Correspondencias Múltiples (ACM) para identificar las variables más significativas y elaborar un cuestionario reducido para los investigadores. Mediante la revisión manual y el aislamiento de temas, las variables se seleccionan en función de su contribución a las dimensiones del ACM. 
+La metodología consiste en aplicar el Análisis de Factores Múltiples (\textquote{Multiple Factor Analysis}, MFA) para identificar las variables más significativas y elaborar un cuestionario reducido para los investigadores. Mediante la revisión manual y el aislamiento de temas, las variables se seleccionan en función de su contribución a las dimensiones del MFA. 
 La encuesta resultante abarca una amplia gama de aspectos culturales, incluidos temas tradicionales de la SCCS y temas de reciente interés como los géneros no binarios y las dinámicas lingüísticas. 
 La metodología propuesta pretende superar las limitaciones de la SCCS original, proporcionando una herramienta práctica para que los investigadores recojan datos etnográficos actualizados y actualicen la SCCS para análisis longitudinales y estudios comparativos. 
 Esta tesina contribuye al avance de la metodología en los estudios transculturales y ofrece un valioso marco para comprender el cambio cultural y la diversidad a lo largo del tiempo.
@@ -59,7 +60,7 @@ Esta tesina contribuye al avance de la metodología en los estudios transcultura
 
 Los estudios transculturales desempeñan un papel crucial en la comprensión de la diversidad de las sociedades humanas y las dinámicas culturales de las distintas comunidades. 
 Para ello, es fundamental disponer de conjuntos de datos exhaustivos que ofrezcan información sobre diversos aspectos culturales y faciliten el análisis comparativo. 
-La Muestra Estándar Intercultural (SCCS), compilada por Peter Murdock y Douglas White [-@murdock1969standard], es uno de esos conjuntos de datos que constituye un repositorio histórico de información etnográfica de diversas sociedades de todo el mundo.
+La Muestra Estándar Intercultural (\textquote{Standard Cross-Cultural Sample},SCCS), compilada por Peter Murdock y Douglas White [-@murdock1969standard], es uno de esos conjuntos de datos que constituye un repositorio histórico de información etnográfica de diversas sociedades de todo el mundo.
 
 La SCCS está formada por datos de 186 sociedades bien documentadas y proporciona una valiosa información sobre una amplia gama de ámbitos culturales, como la subsistencia, la economía, la política, los rituales y las estructuras familiares. 
 Sin embargo, a pesar de su importancia en la investigación transcultural, la SCCS tiene algunas limitaciones. 
@@ -69,9 +70,9 @@ Además, la dependencia del conjunto de datos de los relatos etnográficos intro
 Para abordar estas limitaciones y liberar todo el potencial de la SCCS para la investigación transcultural contemporánea, esta tesina propone un enfoque metodológico centrado en la creación de una encuesta dirigida. 
 Este enfoque se centra en aprovechar el conjunto de datos existente para desarrollar un instrumento de encuesta adaptado para captar información etnográfica actualizada de las sociedades representadas.
 
-La metodología que aquí se propone se basa en los principios del Análisis de Correspondencias Múltiples (ACM), una técnica de reducción de la dimensionalidad adecuada para procesar variables categóricas. 
-Mediante la aplicación del ACM al conjunto de datos original de la SCCS, esta tesina pretende identificar las variables culturales más significativas y priorizarlas para su inclusión en la encuesta dirigida. 
-Mediante la revisión manual y el aislamiento de temas, se seleccionarán las variables en función de su relevancia para el discurso antropológico contemporáneo y su potencial para captar la diversidad cultural en las distintas sociedades.
+La metodología que aquí se propone se basa en los principios del Análisis de Factores Múltiples (\textquote{Multiple Factor Analysis},MFA), una técnica de reducción de la dimensionalidad adecuada para procesar variables categóricas. 
+Mediante la aplicación del MFA al conjunto de datos original de la SCCS, esta tesina pretende identificar las variables culturales más significativas y priorizarlas para su inclusión en la encuesta dirigida. 
+Mediante la revisión manual y el aislamiento de temas, se seleccionarán las variables en función de su relevancia para el discurso antropológico contemporáneo y su potencial para captar la diversidad cultural en las distintas sociedades. El resultado puede, a su vez, ser actualizado mediante este mismo método
 
 El cuestionario de la encuesta resultante abarcará una amplia gama de aspectos culturales, incluidos los temas tradicionales tratados en la SCCS y los temas emergentes que reflejan los intereses de la antropología moderna. 
 Al proporcionar a los investigadores una herramienta normalizada para la recogida de datos etnográficos actualizados, esta encuesta dirigida pretende actualizar la SCCS, permitiendo el análisis longitudinal y los estudios comparativos del cambio cultural a lo largo del tiempo.
@@ -91,9 +92,9 @@ La presente sección tiene como objetivo mostrar cómo llegamos aquí, los probl
 
 A finales del siglo XIX, estudiosos como Sir James Frazer y E. B. Tylor intentaron responder a preguntas sobre la evolución de los humanos. 
 Para ello, compararon descripciones de la vida tribal proporcionadas por miembros de tribus occidentalizadas y misioneros. 
-Este enfoque, conocido como «antropología de sillón», fue criticado por ser demasiado ingenuo en su lectura de las fuentes y por ignorar los conflictos de intereses y la ignorancia de los autores. 
+Este enfoque, conocido como \textquote{antropología de sillón}, fue criticado por ser demasiado ingenuo en su lectura de las fuentes y por ignorar los conflictos de intereses y la ignorancia de los autores. 
 Este enfoque proyectaba prejuicios en el peor de los casos y aplanaba la realidad en el mejor. 
-La tendencia a proyectar prejuicios quedó patente en la teoría del unilinealismo, que sugiere que algunas sociedades se encuentran en diferentes fases de progreso. 
+La tendencia a proyectar prejuicios quedó patente en la teoría del evolucionismo unilineal, que sugiere que algunas sociedades se encuentran en diferentes fases de progreso. 
 El unilinealismo es un ejemplo clásico de la naturaleza altamente especulativa de esta escuela de pensamiento.
 
 A principios del siglo XX, Bronisław Malinowski propuso que los antropólogos realizaran ellos mismos el trabajo de campo en lugar de basarse en observaciones de sillón. 
@@ -106,7 +107,7 @@ El hecho de que estos documentos fueran producidos por expertos en antropología
 Esto supuso una suspención de la crítica original sobre la calidad de las fuentes.
 Mientras tanto, el análisis estadístico fue ganando popularidad lentamente a principios del siglo XX. 
 Prometía eliminar la especulación, reconocida como problemática por los primeros etnógrafos. 
-Con este espíritu, George Peter Murdock propuso la Muestra Etnográfica Mundial y, junto con Douglas R. White, la Muestra Transcultural Estándar (SCCS) en 1969. 
+Con este espíritu, George Peter Murdock propuso la Muestra Etnográfica Mundial y, junto con Douglas R. White, la Muestra Transcultural Estándar (\textquote{Standard Cross-Cultural Sample}, SCCS) en 1969. 
 La SCCS consiste en un conjunto cuidadosamente seleccionado de 186 culturas bien documentadas que ahora están codificadas para 1780 variables. 
 En lenguaje cotidiano, la SCCS son dos cosas: la propia muestra de sociedades y la base de datos asociada a ellas.
 
@@ -116,7 +117,7 @@ Sin controlar estos problemas, es imposible atribuir las similitudes o diferenci
 La independencia es un principio fundamental de los análisis estadísticos que incluyen mediciones de la varianza y pruebas de significatividad. 
 Para resolver este problema, se pueden utilizar ajustes estadísticos que, en el mejor de los casos, pueden anular completamente los efectos de la autocorrelación. 
 Otra posibilidad es eliminar la autocorrelación directamente de la muestra evitando la repetición de sociedades que se influyen mutuamente. 
-Este es el enfoque que han elegido Murdock y White [@mace1994comparative].
+Este es el enfoque que han elegido Murdock y White [@mace1994comparative]. Éste era el método disponible en la época, pero además tenía la ventaja de sencillez de implementación a escala global.
 
 El proceso de muestreo de la SCCS puede considerarse una muestra estratificada de conveniencia. 
 Murdock y White utilizaron su conocimiento de las distintas regiones para identificar 200 estratos a partir de las sociedades de las que disponían de información en su Atlas Etnográfico [@murdock1967ethnographic].
@@ -137,14 +138,14 @@ Además, los elementos de una cultura sólo tienen sentido como parte de un todo
 La antropología, según Malinowski y más tarde Clifford Geertz, debía convertirse en un intento de empatizar con una cultura, de hacerse local, registrar e interpretar. 
 Se consideraba científica sólo en la medida en que se basaba en la observación empírica, pero por lo demás, era hermenéutica: la rama de la filosofía que se ocupa del significado.
 
-Estudiar a los seres humanos puede ser todo un reto porque presentan un alto grado de variabilidad a la escala que nos interesa y sus respuestas a los estímulos también pueden variar mucho. 
+Estudiar a los seres humanos puede ser todo un reto porque presentan un alto grado de variabilidad a la escala espacial y temporal que nos interesa y sus respuestas a los estímulos también pueden variar mucho. 
 Además, los humanos son seres complejos, e intentar modelar esta complejidad es una tarea difícil, sobre todo cuando la entidad que realiza la modelación es otro humano. 
 Además, los investigadores suelen imponer a sus modelos expectativas que nunca se pedirían al modelado de objetos naturales. 
 Las consideraciones éticas que conlleva la investigación con seres humanos también pueden complicar las cosas [@andreski1972social]. 
 En consecuencia, las ciencias sociales han dependido históricamente más de los datos cualitativos que otros campos, lo que las hace más susceptibles a las influencias ideológicas [@dutton_philosophy_nodate].
 
 Esta vulnerabilidad se puso de manifiesto en las décadas siguientes, cuando, en el ámbito de los círculos académicos literarios, fue creciendo lentamente un proyecto político denominado Estudios Críticos. 
-En él se señalaban los problemas de parcialidad y exceso de confianza en la objetividad y la ciencia que se utilizaron para justificar políticas perjudiciales en el siglo pasado, tales como el racismo científico, que fue la base ideológica de la segunda guerra mundial. 
+En él se señalaban los problemas de parcialidad y exceso de confianza en la objetividad y la ciencia que se utilizaron para justificar políticas perjudiciales en el siglo pasado, tales como el racismo científico, que fue la base ideológica de la Segunda Guerra Mundial. 
 Estas críticas eran más punzantes en el caso de las ciencias sociales, sobre todo las que se basaban en gran medida en métodos cualitativos [@latour2004has; @dutton_philosophy_nodate]. 
 Esto dio lugar a una división más fuerte entre la Antropología Comparada y la Antropología Etnográfica. 
 Muchos antropólogos etnográficos empezaron a cuestionar su capacidad de ser científicos y abrazaron su subjetividad, viéndose a sí mismos como escritores literarios y activistas políticos. 
@@ -152,7 +153,7 @@ A medida que aumentaba su activismo político, también lo hacía su antagonismo
 Como eran la cara de la Antropología, muchos financiadores empezaron a retirarles su apoyo, lo que también afectó a la Antropología Comparada.
 
 Otro factor que contribuye a la pérdida financiera es el cambio político y demográfico de las sociedades rurales a las urbanas. 
-La urbanización ha hecho que las ciudades tengan más poder político y económico que en épocas anteriores. 
+La urbanización ha hecho que las ciudades tengan aún más poder político y económico que en épocas anteriores. 
 En consecuencia, la investigación sobre las ciudades ha recibido una mayor parte de los recursos financieros, mientras que el interés por las sociedades no industriales ha disminuido.
 
 Del mismo modo, las etnografías cambiaron su enfoque hacia los entornos urbanos y se volvieron más especializadas. 
@@ -170,7 +171,7 @@ Es como basarse en fotos aéreas de los años 80 para comprender el estado actua
 Aun así, es un buen recurso, por lo que es una suerte que en la era de Internet se pueda acceder a ésta a través de la Base de Datos de Lugares, Lengua, Cultura y Medio Ambiente (D-Place) [@kirby2016d].
 
 El segundo enfoque se enfrenta a retos debido a las diferencias en los objetivos de las bases de datos utilizadas por los antropólogos comparativos.
-Las bases de datos más utilizadas en este campo son la Encuesta Mundial de Valores (WVS), el Estudio Comparativo de Sistemas Electorales (CSES), las encuestas del Centro de Investigación Pew, la Encuesta Mundial Gallup, los Indicadores de Desarrollo Mundial del Banco Mundial, el Índice de Desarrollo Humano (IDH) del Programa de las Naciones Unidas para el Desarrollo y el Índice para una Vida Mejor de la OCDE. 
+Las bases de datos más utilizadas en este campo son la Encuesta Mundial de Valores (\textquote{World Value Survey}, WVS), el Estudio Comparativo de Sistemas Electorales (\textquote{Comparative Study of Electoral Systems}, CSES), las encuestas del Centro de Investigación Pew, la Encuesta Mundial Gallup, los Indicadores de Desarrollo Mundial del Banco Mundial, el Índice de Desarrollo Humano (IDH) del Programa de las Naciones Unidas para el Desarrollo y el Índice para una Vida Mejor de la OCDE. 
 Estas bases de datos se derivan de diversas disciplinas como la economía, la demografía, la geografía y otras, que comparan principalmente naciones. 
 Sin embargo, las naciones son un tipo específico de sociedad que posee suficiente poder industrial, económico y político para reclamar un territorio que normalmente también contiene muchas otras sociedades, y se niega a reconocerlas, ya sea a través de la persecución o redefiniéndolas como subordinadas en alguna capacidad (como reclamarlas como manifestaciones de sí misma o a través de la subyugación política). 
 Por lo tanto, la comparación entre naciones muestra un sesgo a favor de las sociedades industriales y predominantemente urbanas.
@@ -183,20 +184,26 @@ Como diría cualquier antropólogo etnógrafo, lo que he descrito es una general
 En este caso, hay dos puntos importantes que no he compartido hasta ahora. 
 En primer lugar, el fin de la SCCS no significa que dejen de existir bases de datos de antropología. 
 Sigue habiendo muchas bases de datos de antropología actualizadas. 
-En segundo lugar, los etnógrafos no están totalmente ausentes de las sociedades no industriales ni están completamente desvinculados del compromiso con la verdad. 
+En segundo lugar, los etnógrafos no están totalmente ausentes de las sociedades no industriales ni están completamente desvinculados del compromiso con los hechos, sólo con la interpretación de estos. 
 
-Existe un gran proyecto comparativo en curso llamado Los Archivos del Área de Relaciones Humanas («Human Relations Area Files», HRAF), fundado por Murdock.
+Existe un gran proyecto comparativo en curso llamado Los Archivos del Área de Relaciones Humanas (\textquote{Human Relations Area Files}, HRAF), fundado por Murdock.
 HRAF es una organización sin ánimo de lucro que mantiene tres importantes bases de datos: eHRAF World Cultures, eHRAF Archaeology y HRAF Explaining Human Culture. eHRAF World Cultures es la base de datos más cercana a la SCCS y contiene sus datos originales. 
 Sin embargo, se trata más bien de un corpus de etnografías completas, con variables precodificadas escasas, y no es adecuada para el análisis cuantitativo, salvo en el caso de algunas muestras. 
 Además, comparte el mismo problema de los valores perdidos al que se enfrentan la SCCS y otras bases de datos que utilizan el registro etnográfico. 
 eHRAF Archaeology tiene problemas similares, mientras que HRAF Explaining Human Culture es un corpus de investigaciones anteriores que tiene el potencial de permitir la síntesis de variables u observaciones utilizadas en diferentes artículos, siempre que coincidan en sus muestras.
 
 Como vemos, existe una importante laguna que aún no se ha llenado. 
-El HRAF afirma que «un problema metodológico [...] es la típica división entre quienes estudian transculturalmente sociedades no industriales de menor escala y quienes utilizan países como unidades de análisis. 
+Ember y Kalodner [-@ember_status_2024, s\/p], en el HRAF, afirman que:
+
+\begin{displayquote}
+Un problema metodológico [...] es la típica división entre quienes estudian transculturalmente sociedades no industriales de menor escala y quienes utilizan países como unidades de análisis. 
 Los datos para estos dos tipos de comparaciones suelen diferir: 
 los datos etnográficos basados en métodos participativos proporcionan la mayor parte de la información para las sociedades no industriales; 
 las comparaciones transnacionales o entre países tienden a emplear encuestas con preguntas específicas sobre unos pocos ámbitos de la vida.\footnote{Ember y Kalodner usan la siguiente referencia en este punto, pero me fue imposible acceder a ella. Independientemente de la fuente original, el punto se mantiene: Albert, Steven M., and Maria G. Cattell. 1994. “Old Age in Global Perspective: Cross-Cultural and Cross-National Views.”} 
-Reunir los resultados de estos dos tipos de investigación que abarcan la gran variedad de culturas de la Tierra es todo un reto» [@ember_status_2024]. 
+Reunir los resultados de estos dos tipos de investigación que abarcan la gran variedad de culturas de la Tierra es todo un reto. 
+\end{displayquote}
+
+
 Este trabajo es una respuesta a esta afirmación, ya que pretende reunir los hallazgos de estos dos tipos de investigación, abarcando el abanico mundial de culturas.
 
 En el mundo actual, donde la comunicación es más accesible que nunca, podemos salvar la distancia entre analistas y etnógrafos realizando encuestas dirigidas para que los etnógrafos las rellenen. 
@@ -211,14 +218,14 @@ Cabría hacerse dos preguntas teniendo en cuenta lo que he mencionado antes: ¿c
 
 Si a un etnógrafo le preocupa el bienestar de la comunidad que investiga, las tendencias actuales son realmente preocupantes. 
 Las sociedades no industrializadas están siendo ignoradas a un ritmo sin precedentes. 
-Todos los campos, incluida la ciencia, les dan la espalda, y la mayoría de las descripciones modernas de la naturaleza humana siguen centrándose en las sociedades «WEIRD» («Western, Educated, Industrialised, Rich, and Democratic», occidentales, educadas, industrializadas, ricas y democráticas) [@arnett2016neglected;@henrich2010weirdest]. 
+Todos los campos, incluida la ciencia, les dan la espalda, y la mayoría de las descripciones modernas de la naturaleza humana siguen centrándose en las sociedades \textquote{WEIRD} (\textquote{Western, Educated, Industrialised, Rich, and Democratic}, occidentales, educadas, industrializadas, ricas y democráticas) [@arnett2016neglected;@henrich2010weirdest]. 
 Esta tendencia afirma implícitamente que la naturaleza humana está bien representada por estos individuos tan particulares y que el proceso de urbanización se ha completado, lo que conlleva que las personas no industrializadas ya no existen. 
 Si esto no despoja de poder a estas últimas, no sé qué puede hacerlo.
 
 Muchas de las preocupaciones que han llevado a los etnógrafos a mostrarse escépticos ante la ciencia y a querer distanciar los estudios sociales de ella ya no son pertinentes. 
 Como ha argumentado el teórico (post)crítico francés Bruno Latour [-@latour2004has], la práctica de separar los estudios sociales de la ciencia es, en el mejor de los casos, un planteamiento anticuado que pretendía empoderar a los grupos marginados y, en el peor, un error. 
 En la época posterior a la Segunda Guerra Mundial, era comprensible cuestionar la objetividad de las políticas que utilizaban la ciencia para justificar el racismo, el supremacismo, los experimentos poco éticos y las guerras. 
-Sin embargo, en el clima político actual, el escepticismo hacia la ciencia se utiliza para obstaculizar los avances en la lucha contra el cambio climático, la aplicación de vacunas y la promoción de los derechos de los grupos marginados, incluidas las sociedades no industriales. 
+Sin embargo, en el clima político actual, el escepticismo hacia la ciencia se utiliza para obstaculizar los avances en la lucha contra el cambio climático, la aplicación de vacunas y la promoción de los derechos de los grupos marginados, incluidas las sociedades no industriales. \footnote{Véase, por ejemplo, el rechazo a la investigación sobre los efectos de la intervención médica en individuos transgénero, negándoles servicios de salud, o en el contexto que nos atañe, la insistencia en atribuir el origen de ciertas enfermedades a grupos étnicos concretos: SIDA/VIH en comunidades nativas africanas, COVID/SARS-COV2 en China.}
 En mi opinión, distanciar los estudios sociales de la ciencia siempre fue un error. 
 Al fin y al cabo, si construyes castillos en el cielo, acabarán derrumbándose y cayendo sobre tu cabeza.
 
@@ -228,7 +235,7 @@ Nosotros decidimos dónde trazar la linde en función de su utilidad, y la utili
 Así pues, los valores y la subjetividad están siempre presentes. 
 Pregunte a cualquier estadístico sensato y le dirá que trabaja con umbrales que no están justificados por el rigor matemático, sino por el consenso. 
 Sin embargo, ese mismo estadístico le dirá que la estadística proporciona una forma de organizar los hechos y dar a éstos un lugar en la mesa a la hora de tomar decisiones. 
-La objetividad puede ser imaginaria, pero sigue siendo un buen ideal al que aspirar porque evita los peores efectos de la subjetividad, como la arbitrariedad, la falta de fundamento y la incapacidad de comunicar.
+La objetividad puede ser imaginaria, pero sigue siendo un buen ideal al que aspirar porque evita los peores efectos de la subjetividad, como la arbitrariedad, la falta de fundamento y la incapacidad de comunicar. Su esposamiento dogmático, en cambio, es ciego a la realidad de su inexistencia y conlleva los horrores que los Estudios Críticos rechazaron. La solución tal vez no es descartar este ideal imaginario, sino ser conscientes de que, como todo ideal, es imaginario y pensar concienzudamente a dónde nos está llevando y cuándo es pertinente.
 
 Sugiero que las sociedades no industriales reciban el mismo nivel de consideración que sus homólogas industriales a la hora de debatir la diversidad humana. 
 Además, propongo que se incluya a etnógrafos en los debates para que aporten su visión de las categorías, la aplicabilidad y los matices dentro de un entorno estructurado. 
@@ -249,10 +256,11 @@ En nuestro esfuerzo por comprender la diversidad humana, es fundamental tener la
 Aunque los etnógrafos conocen bien sus respectivos lugares, tener un marco de referencia es igualmente importante. 
 La globalización y la modernización se han convertido en el nombre del juego.
 Puede que sepamos lo que se trae entre manos nuestro jugador, pero es igualmente esencial conocer el terreno, saber quién se ha modernizado y en qué momento, dónde ha mostrado resistencia y quién se ha desviado del guión tradicional. 
-Para obtener este conocimiento, necesitamos tener una visión a vista de pájaro de la situación. 
-¿No es así?
+Pero sobre todo, cuál es ese guión.
+Éste no ha sido únicamente escrito por una élite que dicta los destinos de la gente, sino por ella misma, en los caminos y patrones comunes que éstas forman.
+Para obtener este conocimiento, necesitamos tener una visión a vista de pájaro de la situación que nos deje ver el \textit{ecosistema humano}.
 
-Suponiendo que la respuesta sea afirmativa, los próximos capítulos tratarán de los criterios de diseño de la encuesta. 
+Esperando que los argumentos anteriores basten para convencer al etnógrafo escéptico, los próximos capítulos tratarán de los criterios de diseño de la encuesta. 
 Esto incluye el análisis de los datos originales de la SCCS para identificar patrones que puedan ayudarnos a resumirlos a un tamaño manejable. 
 Al hacerlo, se representará la distribución de probabilidad conjunta, lo que a su vez identificará aquello que caracteriza a las sociedades de la muestra.
 
@@ -406,9 +414,10 @@ rm(ordinal_count)
 ```{r}
 # Identify troublemaker categorical variables
 troublemakers <- names(data)[sapply(data, function(x) length(unique(x[!is.na(x)])) <= 1)]
+
 ```
 
-Dado que cualquier análisis estadístico analiza la variabilidad de los datos, variables que sólo tengan un valor (variables constantes) son inútiles y se tienen que retirar por su falta de valor contrastivo. Así, removí las siguientes variables: "`r knitr::combine_words(troublemakers, and = " y ", oxford_comma = F)`". Nótese que éstas son constantes cuando están presentes, pero hubo muchas ocasiones en que no lo estuvieron. Esto nos problema recurrente en la base de datos que afrontamos en la siguiente subsección: Los datos faltantes.
+Dado que cualquier análisis estadístico analiza la variabilidad de los datos, variables que sólo tengan un valor (variables constantes) son inútiles y se tienen que retirar por su falta de valor contrastivo. Así, removí las siguientes variables: "`r knitr::combine_words(troublemakers, and = " y ", oxford_comma = F)`".\footnote{Todas las glosas de las variables, así como de sus categorías se pueden consultar en https://d-place.org/parameters} Nótese que éstas son constantes cuando están presentes, pero hubo muchas ocasiones en que no lo estuvieron. Esto nos enfrenta a un problema recurrente en la base de datos que afrontamos en la siguiente subsección: Los datos faltantes.
 
 ```{r perdidadedatos, fig.cap="Patrones de pérdida de datos: Variables ordenadas en orden alfabético"}
 # Remove troublemaker variables from data
@@ -448,7 +457,7 @@ vis_miss(data) +
 
 \subsection{Análisis de datos faltantes}
 
-De los `r ncol(data)` [variables] \times `r nrow(data)` [sociedades] = `r ncol(data)*nrow(data)` datos que quedan luego de retirar las variables que sólo tenían un valor, tenemos que el `r round(InitialMissingValues,4)*100`\% son datos faltantes. 
+De los `r ncol(data)` [variables] $\times$ `r nrow(data)` [sociedades] = `r ncol(data)*nrow(data)` datos que quedan luego de retirar las variables que sólo tenían un valor, tenemos que el `r round(InitialMissingValues,4)*100`\% son datos faltantes. 
 Éstos se distribuyen en todas las sociedades, ya que la cantidad mínima de datos faltantes por sociedad es de `r round(as.numeric(min_pct_miss_case[2]),2)`\%, que corresponde a la sociedad `r rownames(data)[as.numeric(min_pct_miss_case[1])]`, los `r as.character(societies[which(societies[,"id"]==rownames(data)[as.numeric(min_pct_miss_case[1])]),"pref_name_for_society"])`. 
 Todas la demás sociedades tienen muchos más datos faltantes, como los `r as.character(societies[which(societies[,"id"]==rownames(data)[as.numeric(max_pct_miss_case[1])]),"pref_name_for_society"])`, que tienen hasta un `r round(max_pct_miss_case[2],2)`\% de datos faltantes.
 
@@ -458,12 +467,12 @@ Súmese a lo anterior la lectura de la figura \@ref(fig:perdidadedatos) que mues
 Podemos ver que no pareciera haber un patrón general de datos faltantes entre sociedades.
 Excepto por unos cuantos hilos, la gráfica pareciera ser homogénea de arriba a abajo. 
 En cambio, de izquierda a derecha, en la dirección de las variables, vemos claros haces de variables con datos faltantes. 
-Por lo tanto, podemos decir que el mecanismo de pérdida de los datos no es completamente al azar («Missing completely at random», MCAR). 
+Por lo tanto, podemos decir que el mecanismo de pérdida de los datos no es completamente al azar (\textquote{Missing completely at random}, MCAR). 
 Esto, sumado a que no tenemos casos completos y la proporción de datos faltantes, me obliga a concluir que el único tratamiento adecuado es la imputación múltiple.
 
 Los datos faltantes incluyen un nivel adicional de incertidumbre a una base de datos. 
-Si los datos faltan debido a un mecanismo completamente ajeno a ellos y que afecta la probabilidad de que no se registren de forma homogénea, decimos que se perdieron completamente al azar («Missing completely at random», MCAR) y podemos ignorarlos, ya sea mediante descartar todos los casos incompletos, o hacer los cálculos con cada uno de los datos existentes pertinentes a ese caso. 
-Sin embargo, si el mecanismo que hizo que los datos se perdiesen responde al valor de otros datos sí observados («Missing at random», MAR), o al verdadero valor del dato que nos falta («Missing not at random», MNAR), ignorar los datos faltantes suele introducir un sesgo. 
+Si los datos faltan debido a un mecanismo completamente ajeno a ellos y que afecta la probabilidad de que no se registren de forma homogénea, decimos que se perdieron completamente al azar (\textquote{Missing completely at random}, MCAR) y podemos ignorarlos, ya sea mediante descartar todos los casos incompletos, o hacer los cálculos con cada uno de los datos existentes pertinentes a ese caso. 
+Sin embargo, si el mecanismo que hizo que los datos se perdiesen responde al valor de otros datos sí observados (\textquote{Missing at random}, MAR), o al verdadero valor del dato que nos falta (\textquote{Missing not at random}, MNAR), ignorar los datos faltantes suele introducir un sesgo. 
 Hay muchos métodos de tratar la situación, pero la más responsable epistemológicamente es la imputación múltiple.
 
 La imputación múltiple consiste en sustituir los datos faltantes por valores posibles hasta obtener una base de datos completa que posteriormente se analiza con métodos ordinarios. 
@@ -479,7 +488,7 @@ rm(misscase)
 rm(missvar)
 ```
 
-```{r miflowVanBuuren, out.width='70%', fig.align='center', fig.cap='Diagrama de flujo de la imputación múltiple (Van Buuren, 2018). Los datos incompletos («incomplete data») se usan para crear datos imputados («imputed data»), que se usan para analizar los resultados («analysis results») y finalmente agregarlos («pooled results»).', fig.height=500, fig.width=500}
+```{r miflowVanBuuren, out.width='70%', fig.align='center', fig.cap='Diagrama de flujo de la imputación múltiple (Van Buuren, 2018). Los datos incompletos (\textquote{incomplete data}) se usan para crear datos imputados (\textquote{imputed data}), que se usan para analizar los resultados (\textquote{analysis results}) y finalmente agregarlos (\textquote{pooled results}).', fig.height=500, fig.width=500}
 knitr::include_graphics('ExternalFigures/MultipleImputationFlowDiagramVanBuuren.png')
 ```
 
@@ -488,10 +497,10 @@ Dado que muchas veces no es posible afirmar muchas de estas propiedades, se sugi
 Una complicación particular a este análisis es que la mayoría de los métodos de imputación conocidos están diseñados con el fin de preservar las propiedades de las distribuciones de probabilidad condicional ya que el análisis típico incluye algún tipo de regresión de interés. 
 En cambio, modelos que traten de conservar las propiedades de la distribución conjunta son raros, y más los métodos de agregación que no exijan una regresión lineal de antemano, sino que se satisfagan con la aplicación de un método de reducción de dimensiones.
 
-Ante este panorama, los métodos propuestos por Josse y Husson [-@josse2016missMDA] podrían parecer una respuesta, ya que ellos han diseñado varios métodos de agregado para procedimientos de reducción de dimensiones, tales como el análisis de componentes principales («Principal Components Analysis», PCA), el análisis de correspondencias («Correspondence Analysis»,CA), o el de correspondencias múltiples («Multiple Correspondence Analysis», MCA), entre otros. 
+Ante este panorama, los métodos propuestos por Josse y Husson [-@josse2016missMDA] podrían parecer una respuesta, ya que ellos han diseñado varios métodos de agregado para procedimientos de reducción de dimensiones, tales como el análisis de componentes principales (\textquote{Principal Components Analysis}, PCA), el análisis de correspondencias (\textquote{Correspondence Analysis},CA), o el de correspondencias múltiples (\textquote{Multiple Correspondence Analysis}, MCA), entre otros. 
 Incluso tienen una propuesta para el MFA mediante regularización iterativa (RIMFA), pero su propuesta es de imputación simple, no múltiple, lo que conlleva una incapacidad de tomar en cuenta la incertidumbre de los datos, como antes se mencionó.
 
-Felizmente, Voillet et al. [-@voillet2016handling] diseñaron un método de imputación múltiple con análisis de factores múltiples («Multiple Imputation with Multiple Factor Analysis», MIMFA). 
+Felizmente, Voillet et al. [-@voillet2016handling] diseñaron un método de imputación múltiple con análisis de factores múltiples (\textquote{Multiple Imputation with Multiple Factor Analysis}, MIMFA). 
 Sin embargo, este método no me sirve por dos razones: 1) remueve la posibilidad de trabajar datos mixtos y sólo opera datos numéricos, y 2) sólo puede operar con datos perdidos en forma de individuos perdidos por fuente, como se puede ver en \@ref(fig:MIMFAvoillet).
 
 ```{r MIMFAvoillet, out.width='60%', fig.align='center', fig.cap='Resumen visual del método MIMFA (Voillet et al. 2016)', label= "MIMFAvoillet"}
@@ -499,15 +508,15 @@ knitr::include_graphics(here("Script","ExternalFigures","OverviewMIMFA.png"))
 ```
 
 Ante tal vacío en la literatura, no queda más que proponer una solución propia.
-Por ello, propongo un nuevo método: la imputación múltiple mediante análisis de factores múltiples regularizado iterativo, que por continuar con la nomenclatura hasta la fecha, llamo MIRIMFA: «Multiple Imputation by Regularised Iterative Multiple Factor Analysis».
+Por ello, propongo un nuevo método: la imputación múltiple mediante análisis de factores múltiples regularizado iterativo, que por continuar con la nomenclatura hasta la fecha, llamo MIRIMFA: \textquote{Multiple Imputation by Regularised Iterative Multiple Factor Analysis}.
 
-En resumen, MIRIMFA consta en aplicar el método de análisis de factores múltiples regularizado iterativo («Regularised Iterative Multiple Factor Analysis imputation», RIMFA) [@josse2016missMDA] en múltiples ocasiones, ya que éste puede manejar cualquier forma de los datos faltantes, así como datos mixtos, y luego aplicar un Análisis Conjunto de Cuadros - Estructuración de Cuadros en Tres Índices del Estadístico («Analyse Conjointe de tableaux - Structuration des Tableaux à Trois Indices de la Statistique», ACT-STATIS) [@lavit1994act] a las tablas disyuntivas resultantes para encontrar un espacio compromiso que permita hacerlas comparables. 
+En resumen, MIRIMFA consta en aplicar el método de análisis de factores múltiples regularizado iterativo (\textquote{Regularised Iterative Multiple Factor Analysis imputation}, RIMFA) [@josse2016missMDA] en múltiples ocasiones, ya que éste puede manejar cualquier forma de los datos faltantes, así como datos mixtos, y luego aplicar un Análisis Conjunto de Cuadros - Estructuración de Cuadros en Tres Índices del Estadístico (\textquote{Analyse Conjointe de tableaux - Structuration des Tableaux à Trois Indices de la Statistique}, ACT-STATIS) [@lavit1994act] a las tablas disyuntivas resultantes para encontrar un espacio compromiso que permita hacerlas comparables. 
 Finalmente, transforma la tabla disyuntiva de vuelta a una tabla de datos originales ya imputados. 
 Así, MIRIMFA es un híbrido entre las propuestas de Josse & Husson y Voillet et al.: RIMFA y MIMFA. 
 Por lo anterior, refiero al lector a los artículos correspondientes de estar interesado en las bases matemáticas de los pasos, así mismo, anexo un paquete de R [@r_core_team_r_2018] que permita correr MIRIMFA. 
 Por mi parte, me satisfago en mostrar la validez de mi método mediante una simulación que muestre empíricamente sus propiedades para luego proceder a aplicarlo en el problema principal: la SCCS.
 
-\subsection{Aplicación de MIRIMFA con la base de datos «Poison»}
+\subsection{Aplicación de MIRIMFA con la base de datos \textquote{Poison}}
 
 ```{r}
 data (poison)
@@ -525,23 +534,23 @@ for (i in 1:length(random_rows)) {
 }
 ```
 
-Para demostrar las propiedades de MIRIMFA, se corrió sobre la base de datos «Poison», que se puede obtener del paquete de R FactoMineR [@FactoMineR]. «Poison» es una base de datos obtenida de una encuesta a alumnos y personal de una escuela primaria que experimentaron intoxicación por alimentos. 
-Se les preguntaron sus síntomas y qué comieron. «Poison» tiene `r nrow(poison)` individuos registrados y `r ncol(poison)` variables agrupadas en cuatro grupos: dos variables continuas de tiempo y edad, dos categóricas de sexo y condición de enfermedad, cinco de síntomas y seis de alimentos ingeridos.
+Para demostrar las propiedades de MIRIMFA, se corrió sobre la base de datos \textquote{Poison}, que se puede obtener del paquete de R FactoMineR [@FactoMineR]. \textquote{Poison} es una base de datos obtenida de una encuesta a alumnos y personal de una escuela primaria que experimentaron intoxicación por alimentos. 
+Se les preguntaron sus síntomas y qué comieron. \textquote{Poison} tiene `r nrow(poison)` individuos registrados y `r ncol(poison)` variables agrupadas en cuatro grupos: dos variables continuas de tiempo y edad, dos categóricas de sexo y condición de enfermedad, cinco de síntomas y seis de alimentos ingeridos.
 
-La ventaja de usar MIRIMFA en «Poison» es que tiene una estructura similar a la SCCS, aunque en menor escala, además de que tenemos los datos completos, podemos amputarlos, aplicar MIRIMFA a los datos amputados y comparar el análisis del resultado con el de los datos completos. 
+La ventaja de usar MIRIMFA en \textquote{Poison} es que tiene una estructura similar a la SCCS, aunque en menor escala, además de que tenemos los datos completos, podemos amputarlos, aplicar MIRIMFA a los datos amputados y comparar el análisis del resultado con el de los datos completos. 
 La estructura de datos perdidos obtenida de la imputación puede verse en las figuras \@ref(fig:poisonAmp) y \@ref(fig:poisonAmp2).
 
-```{r poisonAmp, fig.cap='Estructura de datos perdidos en amputación de «Poison»', label="poisonAmp", out.width= '70%'}
+```{r poisonAmp, fig.cap='Estructura de datos perdidos en amputación de \textquote{Poison}', label="poisonAmp", out.width= '70%'}
 vis_miss(poison_amp)+ theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+labs(y="Observaciones")
 
 ```
 
-```{r poisonAmp2, fig.cap='Estructura de datos perdidos en amputación de «Poison»', label="poisonAmp2", out.width= '70%'}
+```{r poisonAmp2, fig.cap='Estructura de datos perdidos en amputación de \textquote{Poison}', label="poisonAmp2", out.width= '70%'}
 gg_miss_upset(poison_amp,mainbar.y.label = "Tamaño de la intersección", sets.x.label = "Tamaño del conjunto")
 ```
 
 
-Al aplicársele tanto MIRIMFA (M=20) como RIMFA a «Poison», vemos que el uso de múltiples imputaciones sí logra estabilizar el modelo mucho más cerca de los datos originales, tal como se ve en las gráficas \@ref(fig:comparVarPoison) a \@ref(fig:partialPoison).
+Al aplicársele tanto MIRIMFA (M=20) como RIMFA a \textquote{Poison}, vemos que el uso de múltiples imputaciones sí logra estabilizar el modelo mucho más cerca de los datos originales, tal como se ve en las gráficas \@ref(fig:comparVarPoison) a \@ref(fig:partialPoison).
 
 
 ```{r}
@@ -723,7 +732,7 @@ contribqualivar23 <- fviz_contrib(RIMFAPoison,
 
 ```
 
-```{r partialPoison, fig.cap='Gráfica de individuos parciales según grupo para cada base de datos: original, imputada con MIRIMFA, imputada sólo con RIMFA.', out.width='95%'}
+```{r partialPoison, fig.cap='Gráfica de individuos parciales según grupo para cada base de datos: original, imputada con MIRIMFA, imputada sólo con RIMFA.', out.width='95%', fig.pos='H'}
 inds1 <- fviz_mfa_ind(result, partial = "all", palette = turbo(4)[3:4]) +
   theme_minimal() +
   theme(legend.position = "none") +
@@ -844,7 +853,7 @@ Desafortunadamente, ya como queda el modelo, el poder de cómputo necesario es i
 No tengo más remedio, pues, que asumir que la elección de pesos fue apropiada y seguir con el análisis.
 
 Con esto fuera del camino, procedo a aplicar MIRIMFA a la SCCS. 
-Dado que el porcentaje de datos perdidos es `r round(InitialMissingValues,4)*100`\%, corrí `r round(InitialMissingValues,4)*100` imputaciones, según la recomendación estándar [@van2018flexible].
+Dado que el porcentaje de datos perdidos es `r round(InitialMissingValues,4)*100`\%, corrí `r round(InitialMissingValues,0)*100` imputaciones, según la recomendación estándar [@van2018flexible].
 
 ```{r, eval=FALSE}
 # Este código no se corrió localmente, sino en servidores externos debido al poder de cómputo requerido
@@ -921,8 +930,8 @@ saveRDS(eigenMIMFASCCS,here("imputationsRMFA","eigenMIMFASCCS.rds"))
 eigenMIMFASCCS <- readRDS(here("imputationsRMFA","eigenMIMFASCCS.rds"))
 
 # Print or use aggregated_cos2 as needed
-knitr::kable(eigenMIMFASCCS, 
-             caption = "Contribuciones de las dimensiones obtenidas del Análisis de Factores Múltiples en la SCCS.", 
+knitr::kable(head(eigenMIMFASCCS,10), 
+             caption = "Contribuciones de las primeras diez dimensiones obtenidas del Análisis de Factores Múltiples en la SCCS.", 
              format = "markdown", 
              booktabs = TRUE,
              col.names = c("Eigenvalor","Varianza (%)","Varianza acumulada (%)")) #%>%
@@ -951,7 +960,7 @@ elbow_index <- which.max(second_derivative)
 Existen muchos métodos de selección de variables. 
 Sin embargo, la mayoría de ellos trata de representar la distribución de probabilidad condicional y trata de seleccionar las variables para una regresión específica. 
 Éste no es nuestro caso. Nuestra intención es simplificar la descripción de una distribución de probabilidad conjunta. 
-En otras palabras, queremos representar a la humanidad como un todo (o al menos lo que se puede ver en la SCCS original) y no relaciones específicas de interés, al menos no por el momento. 
+En otras palabras, queremos representar a la humanidad como un todo (o al menos lo que se puede ver en la SCCS original) y no relaciones específicas de interés, al menos no por el momento, y encontrar la cantidad mínima de variables para dar una buena representación sin sobresimplificar de más. 
 Típicamente para esto se utilizan técnicas de reducción de dimensiones.
 Pero, éstas lo que hacen es crear nuevas dimensiones que uno tiene que interpretar y que son mezclas (combinaciones lineales) de las variables originales.
 Esto no es una solución viable en muchos casos, como el nuestro.
@@ -960,11 +969,11 @@ Es esto lo que haremos.
 
 De entre los métodos de reducción de dimensiones, dada la estructura mixta de los datos y que éstos están agrupados, el método ideal es el Análisis de Factores Múltiples (MFA). 
 Otros métodos de selección de variables podían ser usados, desde métodos de \textit{Machine Learning}, como K-vecinos, o árboles de decisiones, hasta otros de reducción de dimensiones, como análisis de componentes principales sobre variables ficticias. 
-Sin embargo, éstos no contemplaban la estructura de los datos y mediante una exploración inicial se determinó que no eran suficientemente robustos a la violación de sus supuestos, arrojando resultado sin sentido.
+Sin embargo, éstos no contemplaban la estructura de los datos y mediante una exploración inicial se determinó que no eran suficientemente robustos a la violación de sus supuestos, arrojando resultados sin sentido.
 
 El Análisis de Factores Múltiples (MFA) redujo las `r ncol(data)` que nos quedaban a `r nrow(eigenMIMFASCCS)` dimensiones. 
 De éstas, se necesitan `r elbow_index` para alcanzar el codo (punto donde la contribución de las dimensiones empieza a reducir rápidamente), pero eso sólo cubre el `r round(as.numeric(as.data.frame(eigenMIMFASCCS)[elbow_index,3]),2)`\% de la varianza total. 
-Por lo tanto, para que realmente las dimensiones representen a la SCCS, utilicé `r corresponding_dim` dimensiones, que cubren el `r round(as.data.frame(eigenMIMFASCCS)[corresponding_dim,3],2)`.
+Por lo tanto, para que realmente las dimensiones representen a la SCCS, utilicé `r corresponding_dim` dimensiones, que cubren el `r round(as.data.frame(eigenMIMFASCCS)[corresponding_dim,3],2)`\%.
 
 ```{r, eval=FALSE}
 screeplotMIMFASCCS <-fviz_screeplot(MIMFASCCS, 
@@ -993,26 +1002,7 @@ knitr::include_graphics(here("Script","ExternalFigures","screeplotMIMFASCCS.png"
 A pesar de que no nos interesan las dimensiones en sí, sino las contribuciones de las variables al modelo, es prudente revisar que las dimensiones tengan sentido.
 Así, podemos identificar si el modelo está funcionando.
 Por ello, exploraremos las primeras dos. 
-Como se ve en la figura  \@ref(fig:varsSCCS), las variables fueron ordenadas en forma de "V" con respecto a las primeras dos dimensiones. 
-
-Revisando el significado de los códigos de cada una, se puede ver que el eje horizontal contrasta variables sobre complejidad social y egalitarismo de género contra patrilinearidad. 
-A la izquierda tenemos variables como el alto involucramiento de los padres en la crianza de las hijas,  falta de juicios morales ante el aborto espontáneo, continuidad entre paredes y techo (típico de métodos de construcción simple), y falta de arado, irrigación e impuestos. 
-En la otra mano, a la derecha tenemos presencia de estos tres últimos, burocracia, estados y estratos sociales así como tabúes menstruales afectando a la mujer, falta de contracepción, evasión de parientes del sexo opuesto, entre otros. 
-Lo anterior muestra una dicotomía en el trato de género y en complejidad social.
-
-En cambio, el eje vertical muestra categorías relacionadas con la laxitud, en la parte superior, en contraste con una alta punitividad, en la parte inferior. 
-Por ejemplo, arriba vemos variables como falta de castigo al incesto, poco control a niñas, falta de infanticidio y permisividad a relaciones con parientes políticos. 
-Abajo, en cambio, vemos un alto uso del sistema judicial, burocracia, mutilación de mujeres, y alto control de los hijos.
-Es por esto que concluyo que esta dimensión es de la punitividad.
-
-Podemos comprobar esto con la figura \@ref(fig:individualsSCCS), donde se clasifican las sociedades según estas mismas dimensiones y vemos que se replica la misma forma. 
-Vemos también que las sociedades más complejas y patrilineales, como los rusos (SCCS54), los romanos (SCCS49) o los vascos (SCCS50) están en el cuadrante superior derecho, tal como se esperaría de la lectura de la gráfica de variables. 
-En la parte inferior, notoriamente tenemos a los Ashanti o Asante (SCCS19), que son famosos por su sistema legal altamente sofisticado y punitivo. 
-Finalmente, en el cuadrante superior izquierdo vemos comunidades como la Yukaghir (SCCS120), una sociedad cazadora-recolectora con poca distinción entre géneros y poca punitividad.
-
-Vemos también en la figura  \@ref(fig:individualsSCCS) que las sociedades complejas y patriarcales son las mejores representadas por estos ejes, ya que tienen un mayor valor de coseno cuadrado, que es una medida de la calidad de representación. 
-Aún así, esta calidad es pequeña (<30\%), y vemos también que la varianza explicada por estas primeras dimensiones es apenas del `r round(as.data.frame(eigenMIMFASCCS)[2,3],2)`\%.
-En términos simples, esto nos muestra que el MFA considera que las dimensiones más importantes a la hora de clasificar sociedades son el patriarcado y complejidad social, y el punitivismo, pero aún así, ésto sólo explica un `r round(as.data.frame(eigenMIMFASCCS)[2,3],2)`\% de la, por llamarla así, "diversidad" de las sociedades, y para dar cuenta de al menos un 70\%, requerimos de las `r corresponding_dim` dimensiones mencionadas anteriormente.
+Como se ve en la figura  \@ref(fig:varsSCCS), las variables fueron ordenadas en forma de \textquote{V} con respecto a las primeras dos dimensiones. 
 
 ```{r, eval = FALSE}
 QualiVarMIMFASCCS <- fviz_mfa_var(MIMFASCCS,
@@ -1032,9 +1022,24 @@ dev.off()  # Turn off the PNG device
 
 ```
 
-```{r varsSCCS, fig.cap= "Gráfica de variables en las primeras dimensiones del MFA sobre la SCCS", out.width='95%'}
+```{r varsSCCS, fig.cap= "Gráfica de variables en las primeras dimensiones del MFA sobre la SCCS", out.width='75%'}
 knitr::include_graphics(here("Script","ExternalFigures","QualiVarMIMFASCCS.png"))
 ```
+
+Revisando el significado de los códigos de cada una, se puede ver que el eje horizontal contrasta variables sobre complejidad social y egalitarismo de género contra patrilinearidad. 
+A la izquierda tenemos variables como el alto involucramiento de los padres en la crianza de las hijas,  falta de juicios morales ante el aborto espontáneo, continuidad entre paredes y techo (típico de métodos de construcción simple), y falta de arado, irrigación e impuestos. 
+En la otra mano, a la derecha tenemos presencia de estos tres últimos, burocracia, estados y estratos sociales así como tabúes menstruales afectando a la mujer, falta de contracepción, evasión de parientes del sexo opuesto, entre otros. 
+Lo anterior muestra una dicotomía en el trato de género y en complejidad social.
+
+En cambio, el eje vertical muestra categorías relacionadas con la laxitud, en la parte superior, en contraste con una alta punitividad, en la parte inferior. 
+Por ejemplo, arriba vemos variables como falta de castigo al incesto, poco control a niñas, falta de infanticidio y permisividad a relaciones con parientes políticos. 
+Abajo, en cambio, vemos un alto uso del sistema judicial, burocracia, mutilación de mujeres, y alto control de los hijos.
+Es por esto que concluyo que esta dimensión es de la punitividad.
+
+Podemos comprobar esto con la figura \@ref(fig:individualsSCCS), donde se clasifican las sociedades según estas mismas dimensiones y vemos que se replica la misma forma. 
+Vemos también que las sociedades más complejas y patrilineales, como los rusos (SCCS54), los romanos (SCCS49) o los vascos (SCCS50) están en el cuadrante superior derecho, tal como se esperaría de la lectura de la gráfica de variables. 
+En la parte inferior, notoriamente tenemos a los Ashanti o Asante (SCCS19), que son famosos por su sistema legal altamente sofisticado y punitivo. 
+Finalmente, en el cuadrante superior izquierdo vemos comunidades como la Yukaghir (SCCS120), una sociedad cazadora-recolectora con poca distinción entre géneros y poca punitividad.
 
 ```{r, eval = F}
 IndCos2 <- fviz_mfa_ind(MIMFASCCS, col.ind = "cos2",
@@ -1050,13 +1055,18 @@ print(IndCos2)  # Print the plot to the PNG file
 dev.off()  # Turn off the PNG device
 ```
 
-```{r individualsSCCS, fig.cap= "Gráfica de individuos en las primeras dimensiones del MFA sobre la SCCS", out.width='95%'}
+```{r individualsSCCS, fig.cap= "Gráfica de individuos en las primeras dimensiones del MFA sobre la SCCS", out.width='75%'}
 knitr::include_graphics(here("Script","ExternalFigures","IndCos2.png"))
 ```
+
+Vemos también en la figura  \@ref(fig:individualsSCCS) que las sociedades complejas y patriarcales son las mejores representadas por estos ejes, ya que tienen un mayor valor de coseno cuadrado, que es una medida de la calidad de representación. 
+Aún así, esta calidad es pequeña (<30\%), y vemos también que la varianza explicada por estas primeras dimensiones es apenas del `r round(as.data.frame(eigenMIMFASCCS)[2,3],2)`\%.
+En términos simples, esto nos muestra que el MFA considera que las dimensiones más importantes a la hora de clasificar sociedades son el patriarcado y complejidad social, y el punitivismo, pero aún así, ésto sólo explica un `r round(as.data.frame(eigenMIMFASCCS)[2,3],2)`\% de la, por llamarla así,  \textit{diversidad de las sociedades}, y para dar cuenta de al menos un 70\%, requerimos de las `r corresponding_dim` dimensiones mencionadas anteriormente.
+
 \subsection{Selección de variables}
 Con estas `r corresponding_dim` dimensiones, se sumaron las calidades de representación (cosenos cuadrados) ponderadas por la varianza explicada por sus respectivas dimensiones. 
 Las sumas resultantes se tomaron como la contribución de la variable al MFA total y se ordenaron de mayor a menor. 
-Las primeras 20 variables seleccionadas de esta manera se pueden ver en \@ref(tab:SelectionVarsSCCS). La lista completa se puede ver en el repositorio de GitHub. 
+Las primeras 20 variables seleccionadas de esta manera se pueden ver en \@ref(tab:SelectionVarsSCCS). La lista completa se puede ver en el repositorio de GitHub en https://github.com/i5bii977/SCCSsurvey. 
 
 ```{r, eval = FALSE}
 qualiVarMIMFASCCS <-get_mfa_var(MIMFASCCS, 'quali.var')$cos2
@@ -1111,6 +1121,7 @@ rownames(selected_vars) <- NULL
 knitr::kable(head(selected_vars,15), 
              caption = "Primeras variables de la SCCS seleccionadas por el MFA.", 
              format = "markdown", 
+             longtable = TRUE,
              booktabs = TRUE,
              col.names = c("Código",
                            "Título",
@@ -1148,21 +1159,23 @@ Por ejemplo, para la economía, prácticamente sólo seleccionaba variables sobr
 Si bien estas características de las culturas son prominentes cuando están presentes, es difícil decir que la única característica digna de reportar de una economía es si es o no esclavista. 
 Lo mismo con las iniciaciones.
 
-En cambio, con el método aquí mostrado, nuestra selección es prudente: identifica la importancia de la esclavitud, al ponerla hasta arriba, pero justo al definir si ésta está presente o no, le basta, y no se obsesiona con ella.
+En cambio, con el método aquí mostrado, nuestra selección es prudente: identifica la importancia de la esclavitud, al ponerla hasta arriba, pero justo al definir si ésta está presente o no, le basta, y no se obsesiona con con otros aspectos de ésta.
 En su lugar, hace muchas más preguntas sobre la economía, como base de subsistencia, modo de producción, actividad dominante, etc. 
 En cuanto a rituales, el MFA reconoce a los funerales como más importantes que las iniciaciones.
 Lo que tiene sentido.
 El género también se acota y está presente constantemente en relaciones de familia y economía, y tan es así que la primera dimensión es una mezcla entre patriarcado y complejidad social. 
 Sin embargo, el método no le da un monopolio absoluto sobre la representación de las sociedades.
 Finalmente, el MFA puede hacer todo esto porque también reconoce que ciertos conjuntos de variables son más prominentes que otros. 
-El método ad hoc de que cada categoría tuviese su propio análisis le daba el mismo espacio a la economía que el que le daba al chisme.
+El método \textit{ad hoc} de que cada categoría tuviese su propio análisis le daba el mismo espacio a la economía que el que le daba al chisme.
 Además de que ignoraba las relaciones entre categorías.
-El MFA, en cambio, dejó al chisme y otras categorías menores de lado y promovió variables que suenan razonables.
+El MFA, en cambio, dejó al chisme y otras categorías menores de lado y promovió variables que cabría esperar dado el diseño de la SCCS y las prioridades de la mayoría de la investigación antropológica.
 Es por esto que considero que el método funcionó de forma satisfactoria.
 
 Dicho lo anterior, es importante tener en claro que éste es un método de simplificación, y como tal, de pérdida de información. 
 Estamos seleccionando las variables más informativas sobre una comunidad, pero aún así la diversidad original es tan grande que, al aplicar cuestionario que en la próxima sección se muestra, sólo habremos cubierto el `r round(accum_contrib[120]*100,2)`\% de la contribución de las variables que tendríamos de tener la SCCS completa. 
-Por lo anterior, la información obtenida mediante este método servirá para tener un panorama general, pero no nos dará la mejor resolución que estudios específicos posteriores podrían arrojar en su momento.Con las previsiones anteriores, procedo a la elaboración del cuestionario.
+Por lo anterior, la información obtenida mediante este método servirá para tener un panorama general, pero no nos dará la mejor resolución que estudios específicos posteriores podrían arrojar en su momento. 
+Estudios que no están en competencia, sino que ayudan a complementar para darnos más potencia analítica. 
+Con las previsiones anteriores, procedo a la elaboración del cuestionario.
 
 \subsection{Elaboración del cuestionario}
 
@@ -1191,7 +1204,7 @@ Esta selección hizo que, al final, de las 100 variables que propuse expresar en
 En la misma línea, la formulación de preguntas buscó ser lo menos recargada en tecnicismos posible ya que los encuestados difícilmente serán especialistas en todas las áreas que cubre el cuestionario. 
 Si bien es esperable que puedan contestar a la mayoría con un trabajo de campo mínimo, no lo es que estén familiarizados con el vocabulario de otra rama de la antropología, por muy básico que sea.
 Esto es más notorio en el caso de las preguntas de parentesco. Éstas suelen ser sobre qué tipos de parientes son agrupados con otros. 
-Por ejemplo, en español agrupamos a todos los hermanos de esposos y esposos de hermanos con el mismo término "cuñado". 
+Por ejemplo, en español agrupamos a todos los hermanos de esposos y esposos de hermanos con el mismo término \textquote{cuñado}. 
 Sin embargo, sería posible agruparlos de otras maneras. 
 Y eso es lo que hacen en otras comunidades.
 En estudios de parentesco, se han identificado patrones típicos de agrupamiento a los que se ha bautizado con el nombre de una comunidad prominente que utilice dicho método.
@@ -1199,17 +1212,17 @@ Presentar y explicar todas los posibles patrones a un encuestado para luego pedi
 Y hacer una pregunta que enliste todas las posibles combinaciones lógicas también lo es.
 Por eso, en este caso le pido al encuestado que trace en un diagrama la agrupación pertinente y le corresponderá al analista identificar el patrón para el análisis.
 
-Una consecuencia de todo este ajuste es que algunas de las variables del nuevo cuestionario (que llamaremos "Cuestionario Transcultural Resumido para el Siglo XXI" o 21-CCCSS por sus siglas en inglés) no serán directamente comparables con las de la SCCS, sino que serán operacionalizaciones nuevas que tendrán correlación con las históricas. 
+Una consecuencia de todo este ajuste es que algunas de las variables del nuevo cuestionario (que llamaremos \textquote{Cuestionario Transcultural Resumido para el Siglo XXI} o 21-CCCSS por sus siglas en inglés) no serán directamente comparables con las de la SCCS, sino que serán operacionalizaciones nuevas que tendrán correlación con las históricas. 
 Aún así, podremos ver que muchas variables sí son equivalentes y éstas permitirán hacer estudios longitudinales sobre el cambio que las comunidades han experimentado en el siglo XXI.
 
 Además de las variables seleccionadas por el MFA, se sumaron tres tipos más de preguntas: preguntas de control de calidad, subpreguntas de simetría y preguntas de actualización. 
-Las preguntas de control de calidad son aquellas que tienen que buscan sondear la identidad del encuestado para identificar la validez de sus observaciones.
+Las preguntas de control de calidad son aquellas que buscan sondear la identidad del encuestado para identificar la validez de sus observaciones.
 Las subpreguntas de simetría fueron aquellas que puse porque noté algún hueco en la selección de variables que posiblemente hubiera extrañado al encuestado o lo hubiese hecho sospechar sexismo o alguna discriminación grande. 
 Por ejemplo, a las preguntas de inculcación de restricción sexual en niñas (SCCS333) y de agresión en niños (SCCS298) les agregué preguntas similares para el otro género.
 
 La última gran categoría de preguntas que agregué es la de preguntas de actualización. 
 Éstas consisten en preguntas relacionadas con temas que hoy en día han tomado prominencia y no se seguían en la época de Murdock y que carecen de suficiente documentación transcultural, o que son importantes para análisis lingüísticos, filogenéticos o longitudinales. 
-Estos temas fueron "Géneros no binarios", "Lenguaje" y "Aislamiento geográfico".
+Estos temas fueron \textquote{Géneros no binarios}, \textquote{Lenguaje} y \textquote{Aislamiento geográfico}.
 
 Los géneros no binarios se justifican con el hecho de que, a partir de los años 80, los sistemas de género alternativos han sido un foco de estudio intenso en toda la antropología y se ha considerado uno de los pies más flojos de la investigación anterior a esta época. 
 Lo podemos ver en el hecho de que la mayoría de las preguntas de la SCCS asumen un binarismo y que las preguntas que heredamos de la SCCS mantienen dichas posturas binarias, sin contemplar la posibilidad de asignaciones alternativas de tareas.
@@ -1218,50 +1231,45 @@ Si bien ha sido prominente el tema en últimas fechas, ésto ha sido más bien m
 En la sección de lenguaje, se pregunta si la lengua nativa sigue viva en la comunidad, lo cual es crucial para estudios filogenéticos y longitudinales, así como se pregunta por lengua de señas: un tema ignorado para la época de la SCCS.
 Hay otras preguntas que podrían hacerse con respecto a la lengua, pero no son fácilmente identificables por un antropólogo y presumiblemente son recuperables de alguna gramática de alguna variante cercana de la lengua por parte de un lingüista.
 
-Las preguntas sobre aislamiento geográfico son importantes porque en últimas fechas, con nuevas técnicas estadísticas, las hipótesis sobre la importancia de la geografía han tenido un resurgimiento notable en la investigación humana, y el aislamiento ha surgido una y otra vez como hipótesis plausible, pero ha fallado en ser significativa en ningún estudio previo. 
-Sin embargo, la mayoría de los estudios lo atribuyen a la falta de apropiadas medidas, ya que ésta es la única variable geográfica que no es identificable mediante GPS, satélites u otras técnicas modernas.
-Los estudios anteriores han tratado de sustituirla mediante variables de dudosa validez, como densidad de ríos, o pendiente media, pero han fallado.
-Los resultados de este cuestionario podrían ser la primera vez que se estudia esto de forma directa y, o dar por muerta esa línea de investigación, o ser la primera vez que se confirme.
+Las preguntas sobre aislamiento geográfico son importantes porque en últimas fechas, con nuevas técnicas estadísticas, las hipótesis sobre la importancia de la geografía han tenido un resurgimiento notable en la investigación humana, y el aislamiento ha surgido una y otra vez como hipótesis plausible.
+Sin embargo, una revisión de la literatura muestra un comportamiento contradictorio.
+Por una parte, la gran mayoría de los artículos muestran que el aislamiento tiene efectos notorios en la diversidad lingüística y cultural.
+Esto hasta el punto de parecer un consenso en formación [@Lee2014Oceanic;@Padilla-Iglesias2020Geographical;@Huisman2019The].
+Sin embargo, las medidas típicas de aislamiento se vuelven contradictorias al aplicar métodos estadísticos rigurosos: 
+mientras que la distancia entre islas sobrevive métodos de control de relaciones filogenéticas [@Lee2014Oceanic], la rugosidad del terreno y la densidad de ríos, que son las medidas típicas del aislamiento en tierra, fallan en ser significativas [@hua2019ecological].
+Presumiblemente, esto se deba más a una falta de validez de estas últimas medidas y, en tierra es más pertinente hacer un seguimiento de la interacción entre comunidades [@Schreier2009Language].
+Así, el añadir estas preguntas puede dar la pieza final para la conclusión de este rompecabezas, o mostrar las deficiencias de esta línea de investigación actual.
+
+De otras posibles líneas de investigación que han surgido desde los ochentas, como los Estudios de la Ciencia, la Antropología Digital y Urbana, y la Antropología Decolonial, no me es posible ver su pertinencia a los métodos y alcances de estudio. 
+Al menos no de forma directa.
+En cuanto a Estudios de la Globalización, su espíritu permea todo este trabajo, mediante el potencial de estudios longitudinales con respecto a la SCCS, como mediante preguntas específicas sobre estados anteriores y posteriores, como en la sección de aislamiento geográfico y de lenguaje.
+Potencialmente serían de interés otras variables de naturaleza geográfica o de migraciones y formación de nuevas identidades, pero el método de encuesta no me parece el más adecuado, sino levantamientos puntuales, o el uso de nuevas tecnologías, como el levantamiento satelital.
+Además, con cómo queda el cuestionario con estas secciones, presumiblemente ya es un cuestionario bastante largo que requerirá la atención y el espacio de los encuestados como colaboradores en esta investigación.
+
+Hablando de longitudes. Con todas las secciones, el cuestionario termina siendo de 120 preguntas. 
+Afortunadamente, algunas de estas preguntas son condicionadas y, por lo tanto, la mayoría de los encuestados no tendrán que responder las 120 si estas no son pertinentes a su comunidad de investigación.
+Aún así, el cuestionario exige aproximadamente una hora y media de respuesta. Esto se determinó mediante una aplicación piloto a un antropólogo local.
+
+El resultado final de este cuestionario se puede consultar en el repositorio de Github en https://github.com/i5bii977/SCCSsurvey.
+
+\section{Consideraciones finales}
+Si bien este estudio concluye con la formación del cuestionario, es importante tomar en cuenta a quién se administrará.
+El cuestionario se administrará mediante correo electrónico a investigadores que estén trabajando las comunidades originalmente marcadas en la SCCS, o en su defecto, a investigadores de sus parientes sobrevivientes más cercanos.
+Una vez se tenga la respuesta de una proporción razonable de estos y su aprobación, se precederá a publicar la base de datos así obtenida.
+
+Nótese que este estudio tendrá limitantes considerables. 
+En primer lugar, simplifica considerablemente la diversidad de las comunidades, aún más que la SCCS. 
+En segundo lugar, hereda los problemas de ignorancia de temas cruciales, aunque los intente corregir mediante la ampliación y añadidura de ciertas secciones. 
+Tercero, pone de lado cosas que no es factible preguntar a un antropólogo general y que es más apropiado hacer mediante levantamientos directos. 
+
+Aun con lo anterior, el 21-CCCSS sigue teniendo puntos fuertes. Primero, da un panorama global, por muy simple que éste sea.
+Segundo, la corrección de los sesgos originales de la SCCS hará del 21-CCCSS el primer estudio sistemático transcultural de sistemas de género alternativos y permitirá zanjar el tema del aislamiento geográfico, además de permitir un seguimiento de la integración de las comunidades en el siglo XXI, poniendo en igualdad de condiciones tanto sociedades industrializadas como las no industrializadas.
+Tercero, si bien faltará información que es mejor hacer mediante levantamientos, será más sencillo a los investigadores que hagan dichos levantamientos ir puntualmente por ellos que levantar de nuevo lo que en el 21-CCCSS se presenta, de forma que éste servirá como pie de inicio para estudios posteriores.
+
 
 ```{r}
-write.csv2(selected_vars,here("Script","selected_vars2.csv"))
+write.csv2(selected_vars,here("Script","selected_vars.csv"))
 ```
-
-
-
-
-\subsection{Análisis de Correspondencias Múltiples (ACM)}
-
-Para reducir la dimensionalidad del conjunto de datos e identificar las variables más significativas, empleamos el Análisis de Correspondencias Múltiples (ACM). El ACM es un método de reducción de la dimensionalidad que se adapta bien a los datos categóricos, por lo que resulta adecuado para analizar el conjunto de datos de la SCCS, que está formado predominantemente por variables categóricas.
-
-\subsection{Selección de variables}
-
-Mediante el ACM, identificamos las variables más importantes que contribuían a la varianza del conjunto de datos. El proceso de selección consistió en clasificar las variables en función de sus cargas en las dimensiones principales extraídas mediante ACM. Las variables con mayores cargas se consideraron más influyentes a la hora de captar la diversidad y la relevancia culturales.
-
-\subsection{Desarrollo del cuestionario de la encuesta}
-
-A partir de los resultados del proceso de selección de variables, elaboramos un cuestionario de encuesta destinado a recopilar datos etnográficos actualizados de las sociedades de la SCCS. El cuestionario se diseñó para abarcar una amplia gama de aspectos culturales, incluidos temas tradicionales de la SCCS y temas emergentes de la antropología contemporánea.
-
-\subsection{Aislamiento de temas y refinamiento de preguntas}
-
-Para garantizar la exhaustividad y pertinencia del cuestionario de la encuesta, aislamos temas dentro del conjunto de datos de la SCCS y refinamos las preguntas de la encuesta en consecuencia. En este proceso se tuvo en cuenta el solapamiento entre categorías y se garantizó una representación equilibrada de las distintas dimensiones culturales.
-
-\subsection{Incorporación de temas antropológicos contemporáneos}
-
-Además de los temas tradicionales tratados en la SCCS, como la subsistencia, la economía y la organización social, el cuestionario de la encuesta incorporó temas antropológicos contemporáneos, como los géneros no binarios, la dinámica lingüística y el aislamiento geográfico. Estas adiciones reflejan los recientes avances en el discurso antropológico y proporcionan una comprensión más completa de la diversidad cultural.
-
-\subsection{Administración de la encuesta}
-
-
-El cuestionario final de la encuesta se administró a investigadores y antropólogos familiarizados con el conjunto de datos de la SCCS. Se solicitaron comentarios para garantizar la claridad, la no repetición y la pertinencia de las preguntas de la encuesta.
-
-\subsection{Recopilación y análisis de datos}
-
-Los datos recogidos mediante el cuestionario de la encuesta se analizaron utilizando métodos estadísticos para identificar patrones y tendencias en las distintas dimensiones culturales. Los resultados se utilizarán para actualizar y mejorar el conjunto de datos de la SCCS, lo que permitirá realizar análisis longitudinales y estudios comparativos.
-
-\subsection{Consideraciones éticas}
-
-Las consideraciones éticas fueron primordiales durante todo el proceso de investigación. El cuestionario de la encuesta se diseñó respetando las sensibilidades y tradiciones culturales de las sociedades de la SCCS, y se obtuvo el consentimiento informado de los participantes.
 
 \section{Bibliografía}
 

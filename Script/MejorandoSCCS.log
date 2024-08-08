@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.25)  25 JUN 2024 17:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.9)  9 JUL 2024 17:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **MejorandoSCCS.tex
 (./MejorandoSCCS.tex
-LaTeX2e <2024-06-01> patch level 1
+LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
 (c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2024/02/08 v1.4n Standard LaTeX document class
@@ -294,7 +294,7 @@ Package graphics Info: Driver file: pdftex.def on input line 106.
 \cslhangindent=\skip64
 \csllabelwidth=\skip65
 (c:/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2024/06/02 v24.6 The Babel package
+Package: babel 2024/06/26 v24.7 The Babel package
 \babel@savecnt=\count298
 \U@D=\dimen181
 \l@unhyphenated=\language89
@@ -304,7 +304,7 @@ Package: babel 2024/06/02 v24.6 The Babel package
 Package babel Info: You haven't specified a language as a class or package
 (babel)             option. I'll load 'nil'. Reported on input line 4269.
 (c:/texlive/2024/texmf-dist/tex/generic/babel/nil.ldf
-Language: nil 2024/06/02 v24.6 Nil language
+Language: nil 2024/06/26 v24.7 Nil language
 \l@nil=\language90
 ))
 \everypar=\toks31
@@ -642,24 +642,40 @@ LaTeX Font Info:    Redeclaring math accent \hat on input line 267.
 LaTeX Font Info:    Redeclaring math accent \dot on input line 268.
 LaTeX Font Info:    Redeclaring math accent \mathring on input line 269.
 \symUfutm=\mathgroup10
-) (c:/texlive/2024/texmf-dist/tex/latex/multirow/multirow.sty
+) (c:/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
+\csq@reset=\count319
+\csq@gtype=\count320
+\csq@glevel=\count321
+\csq@qlevel=\count322
+\csq@maxlvl=\count323
+\csq@tshold=\count324
+\csq@ltx@everypar=\toks36
+(c:/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+(c:/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+)) (c:/texlive/2024/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip83
-\multirow@cntb=\count319
+\multirow@cntb=\count325
 \multirow@dima=\skip84
 \bigstrutjot=\dimen260
 ) (c:/texlive/2024/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen261
 \WF@size=\dimen262
-\c@WF@wrappedlines=\count320
+\c@WF@wrappedlines=\count326
 \WF@box=\box67
-\WF@everypar=\toks36
+\WF@everypar=\toks37
 Package: wrapfig 2003/01/31  v 3.6
 ) (c:/texlive/2024/texmf-dist/tex/latex/colortbl/colortbl.sty
-Package: colortbl 2024/05/26 v1.0h Color table columns (DPC)
-\everycr=\toks37
+Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
+\everycr=\toks38
 \minrowclearance=\skip85
-\rownum=\count321
+\rownum=\count327
 ) (c:/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
 (c:/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
@@ -674,16 +690,16 @@ Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 (c:/texlive/2024/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box68
-\sift@deathcycles=\count322
+\sift@deathcycles=\count328
 \@vwid@loff=\dimen263
 \@vwid@roff=\dimen264
 )
-\c@taburow=\count323
-\tabu@nbcols=\count324
-\tabu@cnt=\count325
-\tabu@Xcol=\count326
-\tabu@alloc=\count327
-\tabu@nested=\count328
+\c@taburow=\count329
+\tabu@nbcols=\count330
+\tabu@cnt=\count331
+\tabu@Xcol=\count332
+\tabu@alloc=\count333
+\tabu@nested=\count334
 \tabu@target=\dimen265
 \tabu@spreadtarget=\dimen266
 \tabu@naturalX=\dimen267
@@ -693,8 +709,8 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \abovetabulinesep=\dimen271
 \belowtabulinesep=\dimen272
 \tabustrutrule=\dimen273
-\tabu@thebody=\toks38
-\tabu@footnotes=\toks39
+\tabu@thebody=\toks39
+\tabu@footnotes=\toks40
 \tabu@box=\box69
 \tabu@arstrutbox=\box70
 \tabu@hleads=\box71
@@ -715,9 +731,9 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \UL@box=\box74
 \UL@hyphenbox=\box75
 \UL@skip=\skip88
-\UL@hook=\toks40
+\UL@hook=\toks41
 \UL@height=\dimen274
-\UL@pe=\count329
+\UL@pe=\count335
 \UL@pixel=\dimen275
 \ULC@box=\box76
 Package: ulem 2019/11/18
@@ -725,99 +741,80 @@ Package: ulem 2019/11/18
 ) (c:/texlive/2024/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \rotheadsize=\dimen277
-\c@nlinenum=\count330
-\TeXr@lab=\toks41
+\c@nlinenum=\count336
+\TeXr@lab=\toks42
 ) (c:/texlive/2024/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 (c:/texlive/2024/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 )
-\BKM@id=\count331
+\BKM@id=\count337
 )) (c:/texlive/2024/texmf-dist/tex/latex/xurl/xurl.sty
 Package: xurl 2022/01/09 v 0.10 modify URL breaks
-) (./MejorandoSCCS.aux
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'spanish'.
+(./MejorandoSCCS.aux
 
 LaTeX Warning: Label `tab:SelectionVarsSCCS' multiply defined.
-
-
-LaTeX Warning: Label `tab:VariablesCulturales' multiply defined.
-
-
-LaTeX Warning: Label `tab:VariablesCulturales' multiply defined.
-
-
-LaTeX Warning: Label `tab:VariablesCulturales' multiply defined.
-
-
-LaTeX Warning: Label `tab:VariablesCulturales' multiply defined.
-
-
-LaTeX Warning: Label `tab:VariablesCulturales' multiply defined.
-
-
-LaTeX Warning: Label `tab:VariablesCulturales' multiply defined.
-
-
-LaTeX Warning: Label `tab:VariablesCulturales' multiply defined.
-
-
-LaTeX Warning: Label `tab:VariablesCulturales' multiply defined.
 
 )
 \openout1 = `MejorandoSCCS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 167.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 168.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-167.
+168.
 (c:/texlive/2024/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 168.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-167.
+168.
 (c:/texlive/2024/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 168.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-167.
+168.
 (c:/texlive/2024/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Info: Redefining \microtypecontext on input line 167.
-Package microtype Info: Applying patch `item' on input line 167.
-Package microtype Info: Applying patch `toc' on input line 167.
-Package microtype Info: Applying patch `eqnum' on input line 167.
-Package microtype Info: Applying patch `footnote' on input line 167.
-Package microtype Info: Applying patch `verbatim' on input line 167.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Info: Redefining \microtypecontext on input line 168.
+Package microtype Info: Applying patch `item' on input line 168.
+Package microtype Info: Applying patch `toc' on input line 168.
+Package microtype Info: Applying patch `eqnum' on input line 168.
+Package microtype Info: Applying patch `footnote' on input line 168.
+Package microtype Info: Applying patch `verbatim' on input line 168.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 167.
+LaTeX Info: Redefining \showhyphens on input line 168.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -827,17 +824,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count332
+\scratchcounter=\count338
 \scratchdimen=\dimen278
 \scratchbox=\box77
-\nofMPsegments=\count333
-\nofMParguments=\count334
-\everyMPshowfont=\toks42
-\MPscratchCnt=\count335
+\nofMPsegments=\count339
+\nofMParguments=\count340
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count341
 \MPscratchDim=\dimen279
-\MPnumerator=\count336
-\makeMPintoPDFobject=\count337
-\everyMPtoPDFconversion=\toks43
+\MPnumerator=\count342
+\makeMPintoPDFobject=\count343
+\everyMPtoPDFconversion=\toks44
 ) (c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -886,28 +883,28 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 167.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 167.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 167.
+Package hyperref Info: Link coloring OFF on input line 168.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 168.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 168.
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 169.
+ 170.
 (c:/texlive/2024/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 169.
+(Font)              scaled to size 11.03998pt on input line 170.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 169.
+(Font)              scaled to size 8.27998pt on input line 170.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 169.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 169
+(Font)              scaled to size 6.43999pt on input line 170.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 170
 .
 (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 169
+LaTeX Font Info:    Trying to load font information for U+msb on input line 170
 .
 (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -915,7 +912,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-69.
+70.
 (c:/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
@@ -923,21 +920,21 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-69.
+70.
 (c:/texlive/2024/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-169.
+170.
 (c:/texlive/2024/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 169.
+(Font)              scaled to size 11.03998pt on input line 170.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 169.
+(Font)              scaled to size 8.27998pt on input line 170.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 169.
+(Font)              scaled to size 6.43999pt on input line 170.
 (./MejorandoSCCS.toc
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 10.07397pt on input line 5.
@@ -981,13 +978,13 @@ texmf-dist/fonts/enc/dvips/base/8r.enc}])
 [10]
 
 [11]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 327.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 327.
+
 
 [12]
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 316.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 316.
-
 
 [13]
 
@@ -998,70 +995,77 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 [16]
 
 [17]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-91.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
+15.
 (c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (6.28578pt too wide) in paragraph at lines 391--395
-[]\T1/futs/m/n/10.95 (-20) De las va-ria-bles 976 son no-mi-na-les 760 son or-d
-i-na-les, y \T1/lmtt/m/n/10.95 r\T1/futs/m/n/10.95 (-20) continuous_count`
+Overfull \hbox (11.3254pt too wide) in paragraph at lines 415--419
+[]\T1/futs/m/n/10.95 (-20) De las va-ria-bles, 976 son no-mi-na-les, 760 son or
+-di-na-les, y \T1/lmtt/m/n/10.95 r\T1/futs/m/n/10.95 (-20) continuous_count`
+ []
+
+
+Underfull \hbox (badness 2261) in paragraph at lines 420--421
+\T1/futs/m/n/10.95 (+20) re-mo-ví las si-guien-tes va-ria-bles: ``SCCS1381, SCC
+S1382, SCCS1383,
+ []
+
+
+Underfull \hbox (badness 1681) in paragraph at lines 420--421
+\T1/futs/m/n/10.95 (+20) SCCS1385, SCCS1386, SCCS1387, SCCS1600, SCCS1606, SCCS
+1609,
+ []
+
+
+Underfull \hbox (badness 1681) in paragraph at lines 420--421
+\T1/futs/m/n/10.95 (+20) SCCS1611, SCCS1613, SCCS1622, SCCS1698, SCCS1118, SCCS
+1199,
+ []
+
+
+Underfull \hbox (badness 1681) in paragraph at lines 420--421
+\T1/futs/m/n/10.95 (+20) SCCS1200, SCCS1203, SCCS1206, SCCS1221, SCCS1222, SCCS
+1225,
  []
 
 
 
 [18{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}]
-Underfull \hbox (badness 1681) in paragraph at lines 399--401
-\T1/futs/m/n/10.95 (+20) SCCS1386, SCCS1387, SCCS1600, SCCS1606, SCCS1609, SCCS
-1611,
- []
-
-
-Underfull \hbox (badness 1681) in paragraph at lines 399--401
-\T1/futs/m/n/10.95 (+20) SCCS1613, SCCS1622, SCCS1698, SCCS1118, SCCS1199, SCCS
-1200,
- []
-
-
-Underfull \hbox (badness 1681) in paragraph at lines 399--401
-\T1/futs/m/n/10.95 (+20) SCCS1203, SCCS1206, SCCS1221, SCCS1222, SCCS1225, SCCS
-1359,
- []
-
-<MejorandoSCCS_files/figure-latex/perdidadedatos-1.pdf, id=150, 451.6875pt x 29
+<MejorandoSCCS_files/figure-latex/perdidadedatos-1.pdf, id=139, 451.6875pt x 29
 9.1175pt>
 File: MejorandoSCCS_files/figure-latex/perdidadedatos-1.pdf Graphic file (type 
 pdf)
 <use MejorandoSCCS_files/figure-latex/perdidadedatos-1.pdf>
 Package pdftex.def Info: MejorandoSCCS_files/figure-latex/perdidadedatos-1.pdf 
- used on input line 404.
+ used on input line 424.
 (pdftex.def)             Requested size: 325.23541pt x 215.37811pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
+[19 <./MejorandoSCCS_files/figure-latex/perdidadedatos-1.pdf>]
 
-
-[19]
-
-[20 <./MejorandoSCCS_files/figure-latex/perdidadedatos-1.pdf>]
-
-[21]
-<ExternalFigures/MultipleImputationFlowDiagramVanBuuren.png, id=176, 1328.965pt
+[20]
+<ExternalFigures/MultipleImputationFlowDiagramVanBuuren.png, id=163, 1328.965pt
  x 800.9925pt>
 File: ExternalFigures/MultipleImputationFlowDiagramVanBuuren.png Graphic file (
 type png)
 <use ExternalFigures/MultipleImputationFlowDiagramVanBuuren.png>
 Package pdftex.def Info: ExternalFigures/MultipleImputationFlowDiagramVanBuuren
-.png  used on input line 439.
+.png  used on input line 457.
 (pdftex.def)             Requested size: 227.64471pt x 137.2058pt.
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[21]
 
 [22 <./ExternalFigures/MultipleImputationFlowDiagramVanBuuren.png>]
-<ExternalFigures/OverviewMIMFA.png, id=185, 564.1075pt x 888.31876pt>
+<ExternalFigures/OverviewMIMFA.png, id=177, 564.1075pt x 888.31876pt>
 File: ExternalFigures/OverviewMIMFA.png Graphic file (type png)
 <use ExternalFigures/OverviewMIMFA.png>
 Package pdftex.def Info: ExternalFigures/OverviewMIMFA.png  used on input line 
-459.
+477.
 (pdftex.def)             Requested size: 195.13374pt x 307.28358pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1070,178 +1074,176 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [23]
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\textquote' on input line 493.
+
+
+
 [24 <./ExternalFigures/OverviewMIMFA.png>]
-
-LaTeX Warning: Reference `fig:poisonAmp' on page 25 undefined on input line 481
-.
-
-<MejorandoSCCS_files/figure-latex/poisonAmp-1.pdf, id=202, 459.7175pt x 296.106
+<MejorandoSCCS_files/figure-latex/poisonAmp-1.pdf, id=196, 459.7175pt x 296.106
 25pt>
 File: MejorandoSCCS_files/figure-latex/poisonAmp-1.pdf Graphic file (type pdf)
 <use MejorandoSCCS_files/figure-latex/poisonAmp-1.pdf>
 Package pdftex.def Info: MejorandoSCCS_files/figure-latex/poisonAmp-1.pdf  used
- on input line 485.
+ on input line 503.
 (pdftex.def)             Requested size: 227.65556pt x 146.63403pt.
+<MejorandoSCCS_files/figure-latex/poisonAmp2-1.pdf, id=197, 455.7025pt x 311.16
+25pt>
+File: MejorandoSCCS_files/figure-latex/poisonAmp2-1.pdf Graphic file (type pdf)
+
+<use MejorandoSCCS_files/figure-latex/poisonAmp2-1.pdf>
+Package pdftex.def Info: MejorandoSCCS_files/figure-latex/poisonAmp2-1.pdf  use
+d on input line 512.
+(pdftex.def)             Requested size: 227.65598pt x 155.44792pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<MejorandoSCCS_files/figure-latex/poisonAmp-2.pdf, id=203, 455.7025pt x 310.158
-75pt>
-File: MejorandoSCCS_files/figure-latex/poisonAmp-2.pdf Graphic file (type pdf)
-<use MejorandoSCCS_files/figure-latex/poisonAmp-2.pdf>
-Package pdftex.def Info: MejorandoSCCS_files/figure-latex/poisonAmp-2.pdf  used
- on input line 493.
-(pdftex.def)             Requested size: 227.65598pt x 154.94647pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-<MejorandoSCCS_files/figure-latex/comparVarPoison-1.pdf, id=206, 453.695pt x 31
+[25 <./MejorandoSCCS_files/figure-latex/poisonAmp-1.pdf>]
+<MejorandoSCCS_files/figure-latex/comparVarPoison-1.pdf, id=217, 453.695pt x 31
 3.17pt>
 File: MejorandoSCCS_files/figure-latex/comparVarPoison-1.pdf Graphic file (type
  pdf)
 <use MejorandoSCCS_files/figure-latex/comparVarPoison-1.pdf>
 Package pdftex.def Info: MejorandoSCCS_files/figure-latex/comparVarPoison-1.pdf
-  used on input line 504.
+  used on input line 523.
 (pdftex.def)             Requested size: 308.95158pt x 213.25859pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<MejorandoSCCS_files/figure-latex/partialPoison-1.pdf, id=207, 442.65375pt x 30
+<MejorandoSCCS_files/figure-latex/partialPoison-1.pdf, id=218, 442.65375pt x 30
 9.155pt>
 File: MejorandoSCCS_files/figure-latex/partialPoison-1.pdf Graphic file (type p
 df)
 <use MejorandoSCCS_files/figure-latex/partialPoison-1.pdf>
 Package pdftex.def Info: MejorandoSCCS_files/figure-latex/partialPoison-1.pdf  
-used on input line 513.
+used on input line 532.
 (pdftex.def)             Requested size: 308.97067pt x 215.78905pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-<MejorandoSCCS_files/figure-latex/plotVarPoison-1.pdf, id=208, 435.6275pt x 313
+[26 <./MejorandoSCCS_files/figure-latex/poisonAmp2-1.pdf>]
+Overfull \vbox (40.75764pt too high) has occurred while \output is active []
+
+
+
+[27 <./MejorandoSCCS_files/figure-latex/comparVarPoison-1.pdf> <./MejorandoSCCS
+_files/figure-latex/partialPoison-1.pdf>]
+<MejorandoSCCS_files/figure-latex/plotVarPoison-1.pdf, id=254, 435.6275pt x 313
 .17pt>
 File: MejorandoSCCS_files/figure-latex/plotVarPoison-1.pdf Graphic file (type p
 df)
 <use MejorandoSCCS_files/figure-latex/plotVarPoison-1.pdf>
 Package pdftex.def Info: MejorandoSCCS_files/figure-latex/plotVarPoison-1.pdf  
-used on input line 522.
+used on input line 541.
 (pdftex.def)             Requested size: 308.95204pt x 222.10376pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-
-[25]
-
-[26 <./MejorandoSCCS_files/figure-latex/poisonAmp-1.pdf> <./MejorandoSCCS_files
-/figure-latex/poisonAmp-2.pdf>]
-<MejorandoSCCS_files/figure-latex/plotFactorPoison-1.pdf, id=248, 359.3425pt x 
+[28 <./MejorandoSCCS_files/figure-latex/plotVarPoison-1.pdf>]
+<MejorandoSCCS_files/figure-latex/plotFactorPoison-1.pdf, id=273, 359.3425pt x 
 315.1775pt>
 File: MejorandoSCCS_files/figure-latex/plotFactorPoison-1.pdf Graphic file (typ
 e pdf)
 <use MejorandoSCCS_files/figure-latex/plotFactorPoison-1.pdf>
 Package pdftex.def Info: MejorandoSCCS_files/figure-latex/plotFactorPoison-1.pd
-f  used on input line 538.
+f  used on input line 557.
 (pdftex.def)             Requested size: 308.97368pt x 270.99927pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
+[29 <./MejorandoSCCS_files/figure-latex/plotFactorPoison-1.pdf>]
 
-
-[27 <./MejorandoSCCS_files/figure-latex/comparVarPoison-1.pdf>]
-
-[28 <./MejorandoSCCS_files/figure-latex/partialPoison-1.pdf>]
-
-[29 <./MejorandoSCCS_files/figure-latex/plotVarPoison-1.pdf>]
-<ExternalFigures/MainFactorsMIRIMFASCCS.png, id=288, 770.88pt x 578.16pt>
+[30]
+<ExternalFigures/MainFactorsMIRIMFASCCS.png, id=294, 770.88pt x 578.16pt>
 File: ExternalFigures/MainFactorsMIRIMFASCCS.png Graphic file (type png)
 <use ExternalFigures/MainFactorsMIRIMFASCCS.png>
 Package pdftex.def Info: ExternalFigures/MainFactorsMIRIMFASCCS.png  used on in
-put line 566.
+put line 586.
 (pdftex.def)             Requested size: 308.94644pt x 231.70982pt.
 
 
-[30 <./MejorandoSCCS_files/figure-latex/plotFactorPoison-1.pdf>]
+[31 <./ExternalFigures/MainFactorsMIRIMFASCCS.png>]
 
-[31 <./ExternalFigures/MainFactorsMIRIMFASCCS.png>] [32] [33] [34] [35] [36] [3
-7] [38]
-<ExternalFigures/screeplotMIMFASCCS.png, id=341, 1606.0pt x 1204.5pt>
+[32]
+<ExternalFigures/screeplotMIMFASCCS.png, id=308, 1606.0pt x 1204.5pt>
 File: ExternalFigures/screeplotMIMFASCCS.png Graphic file (type png)
 <use ExternalFigures/screeplotMIMFASCCS.png>
 Package pdftex.def Info: ExternalFigures/screeplotMIMFASCCS.png  used on input 
-line 786.
+line 646.
 (pdftex.def)             Requested size: 308.94153pt x 231.70615pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[39]
-
-[40 <./ExternalFigures/screeplotMIMFASCCS.png (PNG copy)>]
-<ExternalFigures/QualiVarMIMFASCCS.png, id=356, 770.88pt x 578.16pt>
+[33]
+<ExternalFigures/QualiVarMIMFASCCS.png, id=314, 770.88pt x 578.16pt>
 File: ExternalFigures/QualiVarMIMFASCCS.png Graphic file (type png)
 <use ExternalFigures/QualiVarMIMFASCCS.png>
 Package pdftex.def Info: ExternalFigures/QualiVarMIMFASCCS.png  used on input l
-ine 815.
-(pdftex.def)             Requested size: 308.94644pt x 231.70982pt.
+ine 660.
+(pdftex.def)             Requested size: 243.91064pt x 182.93298pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ExternalFigures/IndCos2.png, id=357, 770.88pt x 578.16pt>
+
+
+[34 <./ExternalFigures/screeplotMIMFASCCS.png (PNG copy)>]
+
+[35 <./ExternalFigures/QualiVarMIMFASCCS.png (PNG copy)>]
+<ExternalFigures/IndCos2.png, id=327, 770.88pt x 578.16pt>
 File: ExternalFigures/IndCos2.png Graphic file (type png)
 <use ExternalFigures/IndCos2.png>
-Package pdftex.def Info: ExternalFigures/IndCos2.png  used on input line 824.
-(pdftex.def)             Requested size: 308.94644pt x 231.70982pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package pdftex.def Info: ExternalFigures/IndCos2.png  used on input line 684.
+(pdftex.def)             Requested size: 243.91064pt x 182.93298pt.
 
 
-Overfull \hbox (2.38972pt too wide) in paragraph at lines 841--841
+[36 <./ExternalFigures/IndCos2.png (PNG copy)>]
+Overfull \hbox (2.38972pt too wide) in paragraph at lines 706--706
 []|\T1/futs/m/n/10.95 (-20) SCCS1756|  
  []
 
 
-Overfull \hbox (2.38972pt too wide) in paragraph at lines 842--842
+Overfull \hbox (2.38972pt too wide) in paragraph at lines 707--707
 []|\T1/futs/m/n/10.95 (-20) SCCS1123|  
  []
 
 
-Overfull \hbox (2.38972pt too wide) in paragraph at lines 843--843
+Overfull \hbox (2.38972pt too wide) in paragraph at lines 708--708
 []|\T1/futs/m/n/10.95 (-20) SCCS1862|  
  []
 
 
-Overfull \hbox (2.38972pt too wide) in paragraph at lines 847--847
+Overfull \hbox (2.38972pt too wide) in paragraph at lines 712--712
 []|\T1/futs/m/n/10.95 (-20) SCCS1753|  
  []
 
 
-Overfull \hbox (2.38972pt too wide) in paragraph at lines 849--849
+Overfull \hbox (2.38972pt too wide) in paragraph at lines 714--714
 []|\T1/futs/m/n/10.95 (-20) SCCS1445|  
  []
 
 
-Overfull \hbox (2.38972pt too wide) in paragraph at lines 853--853
+Overfull \hbox (2.38972pt too wide) in paragraph at lines 718--718
 []|\T1/futs/m/n/10.95 (-20) SCCS1122|  
  []
 
+[37]
 
-Overfull \hbox (2.38972pt too wide) in paragraph at lines 859--859
-[]|\T1/futs/m/n/10.95 (-20) SCCS1349|  
- []
+[38]
 
+[39]
 
-Overfull \hbox (2.38972pt too wide) in paragraph at lines 860--860
-[]|\T1/futs/m/n/10.95 (-20) SCCS1649|  
- []
+[40]
 
+[41]
 
+[42]
 
-[41] [42 <./ExternalFigures/QualiVarMIMFASCCS.png (PNG copy)>] [43]
+[43]
 
 [44]
 
-[45 <./ExternalFigures/IndCos2.png (PNG copy)>]
+[45]
 
 [46]
 
@@ -1250,195 +1252,33 @@ Overfull \hbox (2.38972pt too wide) in paragraph at lines 860--860
 [48]
 
 [49]
-Overfull \hbox (105.34616pt too wide) in alignment at lines 907--913
- [] [] [] [] 
- []
 
-
-Overfull \hbox (105.34616pt too wide) in alignment at lines 913--916
- [] [] [] [] 
- []
-
-
-Overfull \hbox (105.34616pt too wide) in alignment at lines 916--918
- [] [] [] [] 
- []
-
-
-Underfull \hbox (badness 3323) in paragraph at lines 930--930
-[]|\T1/futs/m/n/10.95 (+20) Endónimos de ve-ci-nos
- []
-
-
-Underfull \hbox (badness 2486) in paragraph at lines 933--933
-[]|\T1/futs/m/n/10.95 (+20) Conserva de ali-men-tos
- []
-
-
-Underfull \hbox (badness 2486) in paragraph at lines 934--934
-[]|\T1/futs/m/n/10.95 (+20) Conserva de ali-men-tos
- []
-
-
-Underfull \hbox (badness 2486) in paragraph at lines 935--935
-[]|\T1/futs/m/n/10.95 (+20) Conserva de ali-men-tos
- []
-
-
-Underfull \hbox (badness 2486) in paragraph at lines 936--936
-[]|\T1/futs/m/n/10.95 (+20) Conserva de ali-men-tos
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 959--959
-[]|\T1/futs/m/n/10.95 (+20) Community Or-ga-ni-sa-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 960--960
-[]|\T1/futs/m/n/10.95 (+20) Community Or-ga-ni-sa-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 963--963
-[]|\T1/futs/m/n/10.95 (+20) Forma de casa-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 968--968
-\T1/futs/m/n/10.95 (+20) Or-ga-ni-sa-tion, Eco-logy,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 969--969
-\T1/futs/m/n/10.95 (+20) Or-ga-ni-sa-tion, Eco-logy,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 980--980
-[]|\T1/futs/m/n/10.95 (+20) Settlement, Ma-rria-ge,
- []
-
-
-Underfull \hbox (badness 3000) in paragraph at lines 983--983
-[]|\T1/futs/m/n/10.95 (+20) Relación en-tre es-po-sas
- []
-
-
-Underfull \hbox (badness 4752) in paragraph at lines 984--984
-[]|\T1/futs/m/n/10.95 (+20) Habitación de es-po-sas
- []
-
-
-Underfull \hbox (badness 4060) in paragraph at lines 986--986
-[]|\T1/futs/m/n/10.95 (+20) Permisividad de ma-tri-
- []
-
-
-Underfull \hbox (badness 3302) in paragraph at lines 1008--1008
-[]|\T1/futs/m/n/10.95 (+20) Hambrunas e in-se-gu-ri-
- []
-
-
-Underfull \hbox (badness 1694) in paragraph at lines 1009--1009
-[]|\T1/futs/m/n/10.95 (+20) Frecuencia de ham-bru-
- []
-
-
-Underfull \hbox (badness 1584) in paragraph at lines 1012--1013
-[]|\T1/futs/m/n/10.95 (+20) 1790, 1801, 1782, 1794,
- []
-
-
-Underfull \hbox (badness 1715) in paragraph at lines 1012--1013
-\T1/futs/m/n/10.95 (+20) 1786, 1795, 1781, 1792,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1019--1019
-[]|\T1/futs/m/n/10.95 (+20) Mutilación ge-ni-tal de
- []
-
-
-Underfull \hbox (badness 2384) in paragraph at lines 1023--1023
-[]|\T1/futs/m/n/10.95 (+20) Presencia de re-li-gio-nes
- []
-
-
-Underfull \hbox (badness 4805) in paragraph at lines 1023--1023
-[]|\T1/futs/m/n/10.95 (+20) Religion, Death, Mour-
- []
-
-
-Underfull \hbox (badness 4805) in paragraph at lines 1024--1024
-[]|\T1/futs/m/n/10.95 (+20) Religion, Death, Mour-
- []
-
-
-Underfull \hbox (badness 4805) in paragraph at lines 1025--1025
-[]|\T1/futs/m/n/10.95 (+20) Religion, Death, Mour-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1032--1032
-[]|\T1/futs/m/n/10.95 (+20) Frecuencia de in-ter-ac-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1032--1032
-\T1/futs/m/n/10.95 (+20) ción con co-mu-ni-dad
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1033
-[]|\T1/futs/m/n/10.95 (+20) Frecuencia de in-ter-ac-
- []
-
-
-Overfull \hbox (105.34616pt too wide) in alignment at lines 918--1035
- [] [] [] [] 
- []
-
-[50] [51] [52] [53] [54] [55] [56] [57]
-
-[58]
-
-[59]
-
-[60]
-
-[61]
-
-[62] (./MejorandoSCCS.aux)
+[50] (./MejorandoSCCS.aux)
  ***********
-LaTeX2e <2024-06-01> patch level 1
+LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
  ***********
-
-LaTeX Warning: There were undefined references.
-
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19853 strings out of 473599
- 324179 string characters out of 5732716
- 2025908 words of memory out of 5000000
- 41840 multiletter control sequences out of 15000+600000
- 702400 words of font info for 421 fonts, out of 8000000 for 9000
+ 20450 strings out of 473583
+ 334471 string characters out of 5732343
+ 1941908 words of memory out of 5000000
+ 42428 multiletter control sequences out of 15000+600000
+ 704558 words of font info for 442 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,10n,93p,1621b,704s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/t
-exlive/2024/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/20
-24/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2024/texmf-dist/font
-s/type1/adobe/utopia/putb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/adobe/u
-topia/putr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/adobe/utopia/putri8a.p
-fb>
-Output written on MejorandoSCCS.pdf (62 pages, 1427397 bytes).
+ 79i,10n,93p,1202b,800s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/tex
+live/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2024/texmf-di
+st/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/
+adobe/utopia/putr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/adobe/utopia/pu
+tri8a.pfb>
+Output written on MejorandoSCCS.pdf (50 pages, 1412701 bytes).
 PDF statistics:
- 579 PDF objects out of 1000 (max. 8388607)
- 468 compressed objects within 5 object streams
- 116 named destinations out of 1000 (max. 500000)
- 80090 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 516 PDF objects out of 1000 (max. 8388607)
+ 419 compressed objects within 5 object streams
+ 105 named destinations out of 1000 (max. 500000)
+ 80042 words of extra memory for PDF output out of 89155 (max. 10000000)
 
