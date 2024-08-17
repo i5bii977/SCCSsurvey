@@ -27,6 +27,8 @@ header-includes:
   - \usepackage{hyperref}
   - \usepackage{fourier}
   - \usepackage{csquotes}
+  - \usepackage{tikz}
+  - \usetikzlibrary{arrows.meta, positioning}
   - \linespread{1.35}
   - \usepackage{geometry}
   - \renewcommand{\topfraction}{.85}
@@ -36,6 +38,10 @@ header-includes:
   - \setcounter{topnumber}{3}
   - \setcounter{bottomnumber}{3}
   - \setcounter{totalnumber}{4}
+  - \usepackage{amsmath}
+  - \usepackage{bm}
+  - \DeclareMathOperator{\diag}{diag}
+  - \DeclareMathOperator{\tr}{tr}
 ---
 
 ```{r setup, include=FALSE}
@@ -512,9 +518,116 @@ Por ello, propongo un nuevo método: la imputación múltiple mediante análisis
 
 En resumen, MIRIMFA consta en aplicar el método de análisis de factores múltiples regularizado iterativo (\textquote{Regularised Iterative Multiple Factor Analysis imputation}, RIMFA) [@josse2016missMDA] en múltiples ocasiones, ya que éste puede manejar cualquier forma de los datos faltantes, así como datos mixtos, y luego aplicar un Análisis Conjunto de Cuadros - Estructuración de Cuadros en Tres Índices del Estadístico (\textquote{Analyse Conjointe de tableaux - Structuration des Tableaux à Trois Indices de la Statistique}, ACT-STATIS) [@lavit1994act] a las tablas disyuntivas resultantes para encontrar un espacio compromiso que permita hacerlas comparables. 
 Finalmente, transforma la tabla disyuntiva de vuelta a una tabla de datos originales ya imputados. 
-Así, MIRIMFA es un híbrido entre las propuestas de Josse & Husson y Voillet et al.: RIMFA y MIMFA. 
-Por lo anterior, refiero al lector a los artículos correspondientes de estar interesado en las bases matemáticas de los pasos, así mismo, anexo un paquete de R [@r_core_team_r_2018] que permita correr MIRIMFA. 
-Por mi parte, me satisfago en mostrar la validez de mi método mediante una simulación que muestre empíricamente sus propiedades para luego proceder a aplicarlo en el problema principal: la SCCS.
+Así, MIRIMFA es un híbrido entre las propuestas de Josse & Husson y Voillet et al.: RIMFA y MIMFA.
+En esta sección exploraremos las base matemáticas de MIRIMFA y en la siguiente sección mostraremos la validez del método con una simulación evidencie empíricamente sus propiedades aplicarlo en el problema principal: la SCCS. Para el lector interesado en usar o validar el método por su cuenta, anexo en el repositorio de GitHub un paquete de R [@r_core_team_r_2018] que permita correr MIRIMFA. 
+
+\subsection{Bases Matemáticas de MIRIMFA}
+
+Para entender las bases de MIRIMFA, primero tenemos que entender las bases del análisis de factores múltiples (MFA), de la imputación mediante análisis de factores múltiples regularizado iterative (RIMFA) y del análisis conjunto de cuadros - estructuración de cuadros en tres índices del estadístico (ACT-STATIS).
+
+\subsubsection{Resumen del Análisis de Factores Múltiples}
+
+Para mostrar la aplicabilidad del análisis de factores múltiples (MFA) a la SCCS, presento las ecuaciones principales y los principios que definen al MFA, mostrando a su vez cómo estas ecuaciones manejan tipos de variables mixtos agrupados en distintos grupos de variables.
+
+Sea $\bm{X}$ la matriz de datos completos compuesta de $K$ subtablas $\bm{X}_{(k)}$, representando diferentes grupos de variables medidas sobre el mismo conjunto de $I$ observaciones. 
+Las variables en cada una de estas subtablas pueden ser de cualquier tipo, incluyendo tanto variables continuas como categóricas [@pages2004multiple;@abdi2013multiple]:
+
+$$
+\bm{X} = \left[ \bm{X}_{(1)} \middle| \cdots \middle| \bm{X}_{(k)} \middle| \cdots \middle| \bm{X}_{(K)} \right]
+$$
+donde $\bm{X}_{(k)}$ es una matriz $I \times J_{(k)}$ con $I$ observaciones y $J_{(k)}$ variables en el $k$-ésimo grupo.
+
+El proceso comienza mediante la estandarización de los datos en cada grupo para asegurar la comparabilidad entre los diferentes tipos de variable. 
+Para variables categóricas, esto incluye su transformación en un conjunto de variables ficticias binarias.
+
+Cada variable ficticia es ponderada por el inverso de la raíz cuadrada de la frecuencia relativa de la categoría:
+$$
+w_j=\frac{1}{\sqrt{p_q}}
+$$
+
+donde $p_q$ es la proporción de individuos en la categoría $q$.
+
+Para prevenir que algún grupo domine el análisis, el MFA equilibra la contribución de cada grupo mediante la ponderación de cada uno de acuerdo con el primer eigenvalor ($\lambda_1$) obtenido de un análisis de componentes principales (PCA) aplicado a cada grupo:
+$$
+\bm{W}_k=\frac{1}{\sqrt{\lambda_1^k}}
+$$
+donde $\lambda_1^k$ es el primer eigenvalor de la matriz de covarianzas del grupo $k$.
+Así, al concatenar las matrices estandarizadas y ponderadas, tenemos que $\bm{X}$ se convierte en $\bm{Z}$:
+
+$$
+\bm{Z} = \left[ \bm{Z}_1 \bm{W}_1 \middle| \cdots \middle| \bm{Z}_K \bm{W}_K \right]
+$$
+donde $\bm{Z}_k$ representa la matriz estandarizada de datos del grupo $k$ y $\bm{W}_k$ su ponderación. Al final, diremos que el número de columnas de $\bm{Z}$ es $R$ el total de todas las variables, continuas o ficticias y el número de renglones es $I$.
+
+Para concluir el MFA, a $Z$ se le efectúa un PCA final, que provee un conjunto de componentes principales que representan la estructura subyacente de la base de datos completa, tomando en cuenta las contribuciones de cada grupo de variables.
+
+\subsubsection{El enfoque de la Imputación Múltiple mediante el Análisis de Factores Múltiples Iterativo Regularizado (MIRIMFA)}
+
+Para tratar tablas con variables agrupadas y datos faltantes, propongo el método MIRIMFA, una imputación múltiple adaptada al marco del Análisis de Factores Múltiples para datos mixtos. El objetivo del método no es obtener las mejores estimaciones posibles de los valores que faltan, sino sustituirlos por valores plausibles para proporcionar estimaciones de las configuraciones del MFA. De acuerdo con la metodología de la Imputación Múltiple, el enfoque MIRIMFA se lleva a cabo realizando los tres pasos siguientes:
+\begin{enumerate}
+  \item Imputación: generar $N$ conjuntos de datos imputados diferentes $\bm{Z}^{[1]},\ldots,\bm{Z}^{[n]}, \ldots,\bm{Z}^{[N]}$ de $\bm{X}$.
+  \item Análisis mediante MFA: realizar un MFA en cada conjunto de datos imputados $\bm{Z}^{[n]}$ que dé lugar a $N$ configuraciones diferentes $\bm{F}^{[1]},\ldots,\bm{F}^{[n]}, \ldots,\bm{F}^{[N]}$.
+  \item Combinación: encontrar una configuración de consenso entre todas las configuraciones $\bm{F}^{[1]}, \ldots,\bm{F}^{[N]}$.
+\end{enumerate}
+Estos pasos se describen detalladamente en las secciones siguientes.
+
+\subsubsection{Generación de los datos imputados: imputación mediante Análisis de Factores Múltiples Iterativo Regularizado (RIMFA)}
+
+El MFA es un método muy útil para bases de datos completas, pero está limitado para bases con datos faltantes. [@pages2002analyse;@husson2013handling]
+
+Éste consiste en:
+\begin{enumerate}
+ \item \textbf{Inicialización:} Se reemplazan los valores que faltan en el conjunto de datos $\bm{Z}$ con estimaciones iniciales. Para datos continuos, se usa cualquier valor aleatorio, para datos categóricos, para cada variable real, la suma de las estimaciones de cada categoría debe sumar uno. Sea $\bm{Z}^0$ el conjunto de datos con valores iniciales imputados.
+ \item \textbf{Pasos iterativos:}
+  \subitem \textbf{Paso 1:} Se construye la matriz:
+    $$\bm{Y}=\bm{Z}^{(l-1)}\left(\bm{D}_\Sigma^{-1/2}\right)^{(l-1)}-\widehat{\bm{M}}^{(l-1)}$$
+    donde $\bm{D}_\Sigma$ es una matriz diagonal con pesos en función del tipo de variable (continua o indicadora).
+    Para las variables continuas $r$, $\bm{D}_{\Sigma r}=1$, para las variables indicadoras, $\bm{D}_{\Sigma r}=\sqrt{p_q}$ y $\bm{\widehat{M}}^l=\bm{1m^\intercal}$, donde $\bm{m}$ es el baricentro de $\bm{Z}^{(l)}$. 
+    Además, se calcula la matriz de eigenvalores regularizados:
+    donde $\lambda_1^k$ es el primer eigenvalor del grupo $k$ obtenido de un PCA sobre dicho grupo, y donde $\sigma^{(k)}$ es la media de los eigenvalores sobrantes.
+    Se efectúa un PCA global sobre los datos ponderados $\bm{Z}^{(l-1)} \bm{\Lambda}^{(l-1)}$, obteniendo los estimados de los componentes principales ($\widehat{\bm{F}}^l$) y de los ejes principales ($\widehat{\bm{U}}^l$) y conservando $S$ dimensiones.
+  \subitem \textbf{Paso 2:} Actualización de los valores que faltan utilizando la fórmula de reconstrucción:
+    $$
+    \widehat{\bm{Z}}^l=\left(\widehat{\bm{M}}^{(l-1)}+\widehat{\bm{F} }^l\widehat{\bm{U}}^{l\intercal}\bm{\Lambda}^{l-1}\right)\left(\bm{D}_\Sigma^{1/2}\right)^{(l-1)}
+    $$
+    Se declara $\widehat{\bm{Z}}^l$ como la entrada de la nueva iteración ($\widehat{\bm{Z}}^{(l-1)}$) y se repite el paso 1 y 2 hasta llegar a la convergencia.
+  \item \textbf{Múltiple imputación:} Se repiten los pasos anteriores hasta tener $N$ bases datos imputadas distintas $\bm{K}^{(1)},\ldots,\bm{K^{(N)}}$. Al realizar las imputaciones de este modo, es razonable suponer que se conservan las relaciones multivariables entre variables dentro de la unidad.
+\end{enumerate}
+
+\subsubsection{Método ACT-STATIS como estrategia de combinación}
+
+Después de tener las $N$ bases de datos imputadas, es necesario hacerlas comparables de forma que sea posible determinar un \textit{consenso}.
+Dado que los resultados del MFA pueden ser similares pero rotados, reflejados o dilatados, es necesario identificar las transformaciones que harían los resultados comparables [@abdi2007statis]. 
+Un método que no tome en cuenta esta posibilidad sufrirá importantes distorsiones.
+Por ello, se hará uso del método ACT-STATIS.
+
+El método ACT-STATIS (\textquote{Analyse Conjointe de tableaux - Structuration des Tableaux à Trois Indices de la Statistique}) es una generalización del PCA que se calcula de la siguiente manera:
+
+\begin{enumerate}
+  \item \textbf{Organización de los datos:} Se tienen $N$ bases de datos, cada una con $I$ observaciones y $S$ columnas. Cada una se denotará $\bm{F}^{[n]}$ para $n=1,2,\ldots,N$.
+  \item \textbf{Cálculo de la matriz de productos cruzados:} Para cada tabla $\bm{F}^{[n]}$, se calcula la matriz de productos cruzados $\bm{T}^{[n]}=\bm{F}^{[n]}\bm{F}^{[n]\intercal}$. 
+  \item \textbf{Matriz de cosenos entre tablas:} Se calcula la matriz $\bm{C}$ de $S\times S$ cuyo término genérico $c_{n,n'}$, o $R_V$ se define como: 
+  $$
+  R_V=[c_{n,n'}]=\frac{\tr{\left(\bm{T}^{[n]\intercal}\bm{T}^{[n']}\right)}}{\sqrt{\tr{\left(\bm{T}^{[n]\intercal}\bm{T}^{[n]}\right)}\times \tr{\left(\bm{T}^{[n']\intercal}\bm{T}^{[n']}\right)}}}
+  $$
+  \item \textbf{PCA y definición de pesos:} Se efectúa un PCA sobre $\bm{C}$ y se escalan los elementos del primer eigenvector así obtenido de forma que sus elementos sumen uno. Este vector de eigenvector escalado es el vector de pesos $\bm{\alpha}$.
+  \item \textbf{Definición de espacio compromiso:} Finalmente, el espacio compromiso se define como $\bm{T}^{[+]}=\sum_{n=1}^N \alpha_n \bm{T}^{[n]}$. 
+\end{enumerate}
+
+Bases con mayores valores de $\alpha_n$ se parecen más a las demás y tendrán un peso mayor, mientras que bases de datos atípicas tendrán un peso más cercano al cero. Los componentes principales de un PCA sobre el espacio compromiso mostrarán las coordenadas de los individuos en éste.
+
+\subsubsection{Implementación de MIRIMFA}
+El algoritmo MIRIMFA se puede resumir como sigue:
+
+\begin{enumerate}\addtocounter{enumi}{-1}
+  \item Se comienza con una base de datos incompleta de datos agrupados mixtos $\bm{X}$. Se convierten las variables categóricas a variables indicadoras y se ponderan para obtener $\bm{Z}$. Se define el número de imputaciones $N$ y la dimensionalidad $S$ del espacio compromiso.
+  \item Se ejecutan $N$ imputaciones mediante RIMFA de forma que las bases de datos imputadas son idénticas en datos no faltantes, pero difieren en datos faltantes.
+  \item Se ejecuta un MFA con $S$ componentes sobre cada base de datos $\bm{Z}^{[n]}$ para obtener $\bm{F}^{[n]}$.
+  \item Se corre un ACT-STATIS sobre el conjunto de configuraciones $\bm{F}^{[1]},\ldots,\bm{F}^{[N]}$ para obtener $\bm{T}^{[+]}$.
+\end{enumerate}
+
+
+Nótese que el número de dimensiones $S$ que se usa en el algoritmo tiene que ser elegido de antemano. Sin embargo, el número de dimensiones no afecta la estimación de los datos imputados y la estimación del espacio compromiso. Dado que el corazón de MIRIMFA es un PCA ponderado, las estrategias típicas para la estimación de componentes podrían se adaptadas a MIRIMFA, pero se necesitarían investigaciones posteriores para validarlas.
 
 \subsection{Aplicación de MIRIMFA con la base de datos \textquote{Poison}}
 
