@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.9)  9 JUL 2024 17:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.10)  17 AUG 2024 00:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **MejorandoSCCS.tex
 (./MejorandoSCCS.tex
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-05-27>
+L3 programming layer <2024-07-20>
 (c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2024/02/08 v1.4n Standard LaTeX document class
 (c:/texlive/2024/texmf-dist/tex/latex/base/size11.clo
@@ -327,7 +327,7 @@ Package: titlesec 2023/10/27 v2.16 Sectioning titles
 ) (c:/texlive/2024/texmf-dist/tex/latex/lipsum/lipsum.sty (c:/texlive/2024/texm
 f-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (c:/texlive/2024/texmf-dist/t
 ex/latex/l3kernel/expl3.sty
-Package: expl3 2024-05-27 L3 programming layer (loader) 
+Package: expl3 2024-07-20 L3 programming layer (loader) 
 (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count300
@@ -401,7 +401,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks35
 \@floatcapt=\box66
 ) (c:/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2024-05-23 v7.01i Hypertext links for LaTeX
+Package: hyperref 2024-07-10 v7.01j Hypertext links for LaTeX
 (c:/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ) (c:/texlive/2024/texmf-dist/tex/generic/pdfescape/pdfescape.sty
@@ -433,7 +433,7 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 \Hy@linkcounter=\count309
 \Hy@pagecounter=\count310
 (c:/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2024-05-23 v7.01i Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2024-07-10 v7.01j Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 ) (c:/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty
@@ -441,7 +441,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count311
 (c:/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2024-05-23 v7.01i Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2024-07-10 v7.01j Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
@@ -486,7 +486,7 @@ package with kernel methods
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 (c:/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2024-05-23 v7.01i Hyperref driver for pdfTeX
+File: hpdftex.def 2024-07-10 v7.01j Hyperref driver for pdfTeX
 (c:/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
@@ -658,24 +658,272 @@ Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 (c:/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
-)) (c:/texlive/2024/texmf-dist/tex/latex/multirow/multirow.sty
+)) (c:/texlive/2024/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/texlive
+/2024/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/texlive/2024/texmf-dist/t
+ex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2024/texmf-dist/tex/generic/pgf/u
+tilities/pgfutil-common.tex
+\pgfutil@everybye=\toks37
+\pgfutil@tempdima=\dimen260
+\pgfutil@tempdimb=\dimen261
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box67
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/tex
+live/2024/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+(c:/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/texlive/20
+24/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/texlive/2024/texmf-dist/
+tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks38
+\pgfkeys@temptoks=\toks39
+
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.co
+de.tex
+\pgfkeys@tmptoks=\toks40
+))
+\pgf@x=\dimen262
+\pgf@y=\dimen263
+\pgf@xa=\dimen264
+\pgf@ya=\dimen265
+\pgf@xb=\dimen266
+\pgf@yb=\dimen267
+\pgf@xc=\dimen268
+\pgf@yc=\dimen269
+\pgf@xd=\dimen270
+\pgf@yd=\dimen271
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count325
+\c@pgf@countb=\count326
+\c@pgf@countc=\count327
+\c@pgf@countd=\count328
+\t@pgf@toka=\toks41
+\t@pgf@tokb=\toks42
+\t@pgf@tokc=\toks43
+\pgf@sys@id@count=\count329
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count330
+\pgfsyssoftpath@bigbuffer@items=\count331
+)
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/texlive/2
+024/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/texlive/2024/texm
+f-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen272
+\pgfmath@count=\count332
+\pgfmath@box=\box68
+\pgfmath@toks=\toks44
+\pgfmath@stack@operand=\toks45
+\pgfmath@stack@operation=\toks46
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
+x)
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+.code.tex)
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
+ex)
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
+de.tex)
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+)
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
+x)
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+)
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
+etics.code.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathcalc.co
+de.tex) (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count333
+)) (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/texliv
+e/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen273
+\pgf@picmaxx=\dimen274
+\pgf@picminy=\dimen275
+\pgf@picmaxy=\dimen276
+\pgf@pathminx=\dimen277
+\pgf@pathmaxx=\dimen278
+\pgf@pathminy=\dimen279
+\pgf@pathmaxy=\dimen280
+\pgf@xx=\dimen281
+\pgf@xy=\dimen282
+\pgf@yx=\dimen283
+\pgf@yy=\dimen284
+\pgf@zx=\dimen285
+\pgf@zy=\dimen286
+)
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
+e.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen287
+\pgf@path@lasty=\dimen288
+)
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
+x
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen289
+\pgf@shorten@start@additional=\dimen290
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box69
+\pgf@hbox=\box70
+\pgf@layerbox@main=\box71
+\pgf@picture@serial@count=\count334
+)
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
+.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen291
+)
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
+ode.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen292
+\pgf@pt@y=\dimen293
+\pgf@pt@temp=\dimen294
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.te
+x
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
+de.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen295
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen296
+\pgf@sys@shading@range@num=\count335
+\pgf@shadingcount=\count336
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box72
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
+.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (c:/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.te
+x
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box73
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
+y
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen297
+\pgf@nodesepend=\dimen298
+)
+(c:/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
+y
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/texlive/2
+024/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/texlive/2024/texmf-dist/
+tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/texlive/2024/texmf-dist/tex/la
+tex/pgf/math/pgfmath.sty (c:/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfma
+th.code.tex)) (c:/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgffor.code
+.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen299
+\pgffor@skip=\dimen300
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
+)) (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
+de.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count337
+\pgfplotmarksize=\dimen301
+)
+\tikz@lastx=\dimen302
+\tikz@lasty=\dimen303
+\tikz@lastxsaved=\dimen304
+\tikz@lastysaved=\dimen305
+\tikz@lastmovetox=\dimen306
+\tikz@lastmovetoy=\dimen307
+\tikzleveldistance=\dimen308
+\tikzsiblingdistance=\dimen309
+\tikz@figbox=\box74
+\tikz@figbox@bg=\box75
+\tikz@tempbox=\box76
+\tikz@tempbox@bg=\box77
+\tikztreelevel=\count338
+\tikznumberofchildren=\count339
+\tikznumberofcurrentchild=\count340
+\tikz@fig@count=\count341
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count342
+\pgfmatrixcurrentcolumn=\count343
+\pgf@matrix@numberofcolumns=\count344
+)
+\tikz@expandcount=\count345
+
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.cod
+e.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen310
+\pgfarrowlength=\dimen311
+\pgfarrowwidth=\dimen312
+\pgfarrowlinewidth=\dimen313
+)
+(c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2024/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip83
-\multirow@cntb=\count325
+\multirow@cntb=\count346
 \multirow@dima=\skip84
-\bigstrutjot=\dimen260
+\bigstrutjot=\dimen314
 ) (c:/texlive/2024/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen261
-\WF@size=\dimen262
-\c@WF@wrappedlines=\count326
-\WF@box=\box67
-\WF@everypar=\toks37
+\wrapoverhang=\dimen315
+\WF@size=\dimen316
+\c@WF@wrappedlines=\count347
+\WF@box=\box78
+\WF@everypar=\toks49
 Package: wrapfig 2003/01/31  v 3.6
 ) (c:/texlive/2024/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
-\everycr=\toks38
+\everycr=\toks50
 \minrowclearance=\skip85
-\rownum=\count327
+\rownum=\count348
 ) (c:/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
 (c:/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
@@ -689,36 +937,36 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 (c:/texlive/2024/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box68
-\sift@deathcycles=\count328
-\@vwid@loff=\dimen263
-\@vwid@roff=\dimen264
+\@vwid@box=\box79
+\sift@deathcycles=\count349
+\@vwid@loff=\dimen317
+\@vwid@roff=\dimen318
 )
-\c@taburow=\count329
-\tabu@nbcols=\count330
-\tabu@cnt=\count331
-\tabu@Xcol=\count332
-\tabu@alloc=\count333
-\tabu@nested=\count334
-\tabu@target=\dimen265
-\tabu@spreadtarget=\dimen266
-\tabu@naturalX=\dimen267
-\tabucolX=\dimen268
-\tabu@Xsum=\dimen269
-\extrarowdepth=\dimen270
-\abovetabulinesep=\dimen271
-\belowtabulinesep=\dimen272
-\tabustrutrule=\dimen273
-\tabu@thebody=\toks39
-\tabu@footnotes=\toks40
-\tabu@box=\box69
-\tabu@arstrutbox=\box70
-\tabu@hleads=\box71
-\tabu@vleads=\box72
+\c@taburow=\count350
+\tabu@nbcols=\count351
+\tabu@cnt=\count352
+\tabu@Xcol=\count353
+\tabu@alloc=\count354
+\tabu@nested=\count355
+\tabu@target=\dimen319
+\tabu@spreadtarget=\dimen320
+\tabu@naturalX=\dimen321
+\tabucolX=\dimen322
+\tabu@Xsum=\dimen323
+\extrarowdepth=\dimen324
+\abovetabulinesep=\dimen325
+\belowtabulinesep=\dimen326
+\tabustrutrule=\dimen327
+\tabu@thebody=\toks51
+\tabu@footnotes=\toks52
+\tabu@box=\box80
+\tabu@arstrutbox=\box81
+\tabu@hleads=\box82
+\tabu@vleads=\box83
 \tabu@cellskip=\skip86
 ) (c:/texlive/2024/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box73
+\@tempboxb=\box84
 ) (c:/texlive/2024/texmf-dist/tex/latex/threeparttablex/threeparttablex.sty
 Package: threeparttablex 2013/07/23 v0.3 by daleif
 (c:/texlive/2024/texmf-dist/tex/latex/environ/environ.sty
@@ -728,27 +976,27 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 \TPTL@width=\skip87
 ) (c:/texlive/2024/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box74
-\UL@hyphenbox=\box75
+\UL@box=\box85
+\UL@hyphenbox=\box86
 \UL@skip=\skip88
-\UL@hook=\toks41
-\UL@height=\dimen274
-\UL@pe=\count335
-\UL@pixel=\dimen275
-\ULC@box=\box76
+\UL@hook=\toks53
+\UL@height=\dimen328
+\UL@pe=\count356
+\UL@pixel=\dimen329
+\ULC@box=\box87
 Package: ulem 2019/11/18
-\ULdepth=\dimen276
+\ULdepth=\dimen330
 ) (c:/texlive/2024/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen277
-\c@nlinenum=\count336
-\TeXr@lab=\toks42
+\rotheadsize=\dimen331
+\c@nlinenum=\count357
+\TeXr@lab=\toks54
 ) (c:/texlive/2024/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 (c:/texlive/2024/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 )
-\BKM@id=\count337
+\BKM@id=\count358
 )) (c:/texlive/2024/texmf-dist/tex/latex/xurl/xurl.sty
 Package: xurl 2022/01/09 v 0.10 modify URL breaks
 )
@@ -763,58 +1011,58 @@ LaTeX Warning: Label `tab:SelectionVarsSCCS' multiply defined.
 )
 \openout1 = `MejorandoSCCS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 168.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 174.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-168.
+174.
 (c:/texlive/2024/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 174.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-168.
+174.
 (c:/texlive/2024/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 174.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-168.
+174.
 (c:/texlive/2024/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Info: Redefining \microtypecontext on input line 168.
-Package microtype Info: Applying patch `item' on input line 168.
-Package microtype Info: Applying patch `toc' on input line 168.
-Package microtype Info: Applying patch `eqnum' on input line 168.
-Package microtype Info: Applying patch `footnote' on input line 168.
-Package microtype Info: Applying patch `verbatim' on input line 168.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Info: Redefining \microtypecontext on input line 174.
+Package microtype Info: Applying patch `item' on input line 174.
+Package microtype Info: Applying patch `toc' on input line 174.
+Package microtype Info: Applying patch `eqnum' on input line 174.
+Package microtype Info: Applying patch `footnote' on input line 174.
+Package microtype Info: Applying patch `verbatim' on input line 174.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 168.
+LaTeX Info: Redefining \showhyphens on input line 174.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -824,17 +1072,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count338
-\scratchdimen=\dimen278
-\scratchbox=\box77
-\nofMPsegments=\count339
-\nofMParguments=\count340
-\everyMPshowfont=\toks43
-\MPscratchCnt=\count341
-\MPscratchDim=\dimen279
-\MPnumerator=\count342
-\makeMPintoPDFobject=\count343
-\everyMPtoPDFconversion=\toks44
+\scratchcounter=\count359
+\scratchdimen=\dimen332
+\scratchbox=\box88
+\nofMPsegments=\count360
+\nofMParguments=\count361
+\everyMPshowfont=\toks55
+\MPscratchCnt=\count362
+\MPscratchDim=\dimen333
+\MPnumerator=\count363
+\makeMPintoPDFobject=\count364
+\everyMPtoPDFconversion=\toks56
 ) (c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -883,28 +1131,28 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 168.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 168.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 168.
+Package hyperref Info: Link coloring OFF on input line 174.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 174.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 174.
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 170.
+ 176.
 (c:/texlive/2024/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 170.
+(Font)              scaled to size 11.03998pt on input line 176.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 170.
+(Font)              scaled to size 8.27998pt on input line 176.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 170.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 170
+(Font)              scaled to size 6.43999pt on input line 176.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 176
 .
 (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 170
+LaTeX Font Info:    Trying to load font information for U+msb on input line 176
 .
 (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -912,7 +1160,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-70.
+76.
 (c:/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
@@ -920,21 +1168,21 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-70.
+76.
 (c:/texlive/2024/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-170.
+176.
 (c:/texlive/2024/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 170.
+(Font)              scaled to size 11.03998pt on input line 176.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 170.
+(Font)              scaled to size 8.27998pt on input line 176.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 170.
+(Font)              scaled to size 6.43999pt on input line 176.
 (./MejorandoSCCS.toc
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 10.07397pt on input line 5.
@@ -954,8 +1202,8 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2024/
 texmf-dist/fonts/enc/dvips/base/8r.enc}])
-\tf@toc=\write3
-\openout3 = `MejorandoSCCS.toc'.
+\tf@toc=\write4
+\openout4 = `MejorandoSCCS.toc'.
 
 
 
@@ -979,9 +1227,9 @@ texmf-dist/fonts/enc/dvips/base/8r.enc}])
 
 [11]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 327.
+(Font)              scaled to size 6.99199pt on input line 333.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 327.
+(Font)              scaled to size 6.99199pt on input line 333.
 
 
 [12]
@@ -996,35 +1244,35 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 
 [17]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
-15.
+21.
 (c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (11.3254pt too wide) in paragraph at lines 415--419
+Overfull \hbox (11.3254pt too wide) in paragraph at lines 421--425
 []\T1/futs/m/n/10.95 (-20) De las va-ria-bles, 976 son no-mi-na-les, 760 son or
 -di-na-les, y \T1/lmtt/m/n/10.95 r\T1/futs/m/n/10.95 (-20) continuous_count`
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 420--421
+Underfull \hbox (badness 2261) in paragraph at lines 426--427
 \T1/futs/m/n/10.95 (+20) re-mo-ví las si-guien-tes va-ria-bles: ``SCCS1381, SCC
 S1382, SCCS1383,
  []
 
 
-Underfull \hbox (badness 1681) in paragraph at lines 420--421
+Underfull \hbox (badness 1681) in paragraph at lines 426--427
 \T1/futs/m/n/10.95 (+20) SCCS1385, SCCS1386, SCCS1387, SCCS1600, SCCS1606, SCCS
 1609,
  []
 
 
-Underfull \hbox (badness 1681) in paragraph at lines 420--421
+Underfull \hbox (badness 1681) in paragraph at lines 426--427
 \T1/futs/m/n/10.95 (+20) SCCS1611, SCCS1613, SCCS1622, SCCS1698, SCCS1118, SCCS
 1199,
  []
 
 
-Underfull \hbox (badness 1681) in paragraph at lines 420--421
+Underfull \hbox (badness 1681) in paragraph at lines 426--427
 \T1/futs/m/n/10.95 (+20) SCCS1200, SCCS1203, SCCS1206, SCCS1221, SCCS1222, SCCS
 1225,
  []
@@ -1032,26 +1280,26 @@ Underfull \hbox (badness 1681) in paragraph at lines 420--421
 
 
 [18{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}]
-<MejorandoSCCS_files/figure-latex/perdidadedatos-1.pdf, id=139, 451.6875pt x 29
+<MejorandoSCCS_files/figure-latex/perdidadedatos-1.pdf, id=144, 451.6875pt x 29
 9.1175pt>
 File: MejorandoSCCS_files/figure-latex/perdidadedatos-1.pdf Graphic file (type 
 pdf)
 <use MejorandoSCCS_files/figure-latex/perdidadedatos-1.pdf>
 Package pdftex.def Info: MejorandoSCCS_files/figure-latex/perdidadedatos-1.pdf 
- used on input line 424.
+ used on input line 430.
 (pdftex.def)             Requested size: 325.23541pt x 215.37811pt.
 
 
 [19 <./MejorandoSCCS_files/figure-latex/perdidadedatos-1.pdf>]
 
 [20]
-<ExternalFigures/MultipleImputationFlowDiagramVanBuuren.png, id=163, 1328.965pt
+<ExternalFigures/MultipleImputationFlowDiagramVanBuuren.png, id=168, 1328.965pt
  x 800.9925pt>
 File: ExternalFigures/MultipleImputationFlowDiagramVanBuuren.png Graphic file (
 type png)
 <use ExternalFigures/MultipleImputationFlowDiagramVanBuuren.png>
 Package pdftex.def Info: ExternalFigures/MultipleImputationFlowDiagramVanBuuren
-.png  used on input line 457.
+.png  used on input line 463.
 (pdftex.def)             Requested size: 227.64471pt x 137.2058pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1061,11 +1309,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [21]
 
 [22 <./ExternalFigures/MultipleImputationFlowDiagramVanBuuren.png>]
-<ExternalFigures/OverviewMIMFA.png, id=177, 564.1075pt x 888.31876pt>
+<ExternalFigures/OverviewMIMFA.png, id=182, 564.1075pt x 888.31876pt>
 File: ExternalFigures/OverviewMIMFA.png Graphic file (type png)
 <use ExternalFigures/OverviewMIMFA.png>
 Package pdftex.def Info: ExternalFigures/OverviewMIMFA.png  used on input line 
-477.
+483.
 (pdftex.def)             Requested size: 195.13374pt x 307.28358pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1074,170 +1322,182 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [23]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\textquote' on input line 493.
-
-
-
 [24 <./ExternalFigures/OverviewMIMFA.png>]
-<MejorandoSCCS_files/figure-latex/poisonAmp-1.pdf, id=196, 459.7175pt x 296.106
+
+[25{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}]
+
+[26]
+
+[27]
+Missing character: There is no ‘ in font lmbsy10!
+
+
+[28{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
+
+[29]
+
+[30]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\textquote' on input line 609.
+
+<MejorandoSCCS_files/figure-latex/poisonAmp-1.pdf, id=263, 459.7175pt x 296.106
 25pt>
 File: MejorandoSCCS_files/figure-latex/poisonAmp-1.pdf Graphic file (type pdf)
 <use MejorandoSCCS_files/figure-latex/poisonAmp-1.pdf>
 Package pdftex.def Info: MejorandoSCCS_files/figure-latex/poisonAmp-1.pdf  used
- on input line 503.
+ on input line 619.
 (pdftex.def)             Requested size: 227.65556pt x 146.63403pt.
-<MejorandoSCCS_files/figure-latex/poisonAmp2-1.pdf, id=197, 455.7025pt x 311.16
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<MejorandoSCCS_files/figure-latex/poisonAmp2-1.pdf, id=264, 455.7025pt x 311.16
 25pt>
 File: MejorandoSCCS_files/figure-latex/poisonAmp2-1.pdf Graphic file (type pdf)
 
 <use MejorandoSCCS_files/figure-latex/poisonAmp2-1.pdf>
 Package pdftex.def Info: MejorandoSCCS_files/figure-latex/poisonAmp2-1.pdf  use
-d on input line 512.
+d on input line 628.
 (pdftex.def)             Requested size: 227.65598pt x 155.44792pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-
-[25 <./MejorandoSCCS_files/figure-latex/poisonAmp-1.pdf>]
-<MejorandoSCCS_files/figure-latex/comparVarPoison-1.pdf, id=217, 453.695pt x 31
+<MejorandoSCCS_files/figure-latex/comparVarPoison-1.pdf, id=267, 453.695pt x 31
 3.17pt>
 File: MejorandoSCCS_files/figure-latex/comparVarPoison-1.pdf Graphic file (type
  pdf)
 <use MejorandoSCCS_files/figure-latex/comparVarPoison-1.pdf>
 Package pdftex.def Info: MejorandoSCCS_files/figure-latex/comparVarPoison-1.pdf
-  used on input line 523.
+  used on input line 639.
 (pdftex.def)             Requested size: 308.95158pt x 213.25859pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<MejorandoSCCS_files/figure-latex/partialPoison-1.pdf, id=218, 442.65375pt x 30
+<MejorandoSCCS_files/figure-latex/partialPoison-1.pdf, id=268, 442.65375pt x 30
 9.155pt>
 File: MejorandoSCCS_files/figure-latex/partialPoison-1.pdf Graphic file (type p
 df)
 <use MejorandoSCCS_files/figure-latex/partialPoison-1.pdf>
 Package pdftex.def Info: MejorandoSCCS_files/figure-latex/partialPoison-1.pdf  
-used on input line 532.
+used on input line 648.
 (pdftex.def)             Requested size: 308.97067pt x 215.78905pt.
 
 
-[26 <./MejorandoSCCS_files/figure-latex/poisonAmp2-1.pdf>]
-Overfull \vbox (40.75764pt too high) has occurred while \output is active []
+[31]
+Overfull \vbox (122.38098pt too high) has occurred while \output is active []
 
 
 
-[27 <./MejorandoSCCS_files/figure-latex/comparVarPoison-1.pdf> <./MejorandoSCCS
-_files/figure-latex/partialPoison-1.pdf>]
-<MejorandoSCCS_files/figure-latex/plotVarPoison-1.pdf, id=254, 435.6275pt x 313
+[32 <./MejorandoSCCS_files/figure-latex/poisonAmp-1.pdf> <./MejorandoSCCS_files
+/figure-latex/poisonAmp2-1.pdf> <./MejorandoSCCS_files/figure-latex/partialPois
+on-1.pdf>]
+<MejorandoSCCS_files/figure-latex/plotVarPoison-1.pdf, id=311, 435.6275pt x 313
 .17pt>
 File: MejorandoSCCS_files/figure-latex/plotVarPoison-1.pdf Graphic file (type p
 df)
 <use MejorandoSCCS_files/figure-latex/plotVarPoison-1.pdf>
 Package pdftex.def Info: MejorandoSCCS_files/figure-latex/plotVarPoison-1.pdf  
-used on input line 541.
+used on input line 657.
 (pdftex.def)             Requested size: 308.95204pt x 222.10376pt.
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[28 <./MejorandoSCCS_files/figure-latex/plotVarPoison-1.pdf>]
-<MejorandoSCCS_files/figure-latex/plotFactorPoison-1.pdf, id=273, 359.3425pt x 
+
+
+[33 <./MejorandoSCCS_files/figure-latex/comparVarPoison-1.pdf>]
+<MejorandoSCCS_files/figure-latex/plotFactorPoison-1.pdf, id=327, 359.3425pt x 
 315.1775pt>
 File: MejorandoSCCS_files/figure-latex/plotFactorPoison-1.pdf Graphic file (typ
 e pdf)
 <use MejorandoSCCS_files/figure-latex/plotFactorPoison-1.pdf>
 Package pdftex.def Info: MejorandoSCCS_files/figure-latex/plotFactorPoison-1.pd
-f  used on input line 557.
+f  used on input line 673.
 (pdftex.def)             Requested size: 308.97368pt x 270.99927pt.
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[29 <./MejorandoSCCS_files/figure-latex/plotFactorPoison-1.pdf>]
 
-[30]
-<ExternalFigures/MainFactorsMIRIMFASCCS.png, id=294, 770.88pt x 578.16pt>
+
+[34 <./MejorandoSCCS_files/figure-latex/plotVarPoison-1.pdf>]
+
+[35 <./MejorandoSCCS_files/figure-latex/plotFactorPoison-1.pdf>]
+<ExternalFigures/MainFactorsMIRIMFASCCS.png, id=356, 770.88pt x 578.16pt>
 File: ExternalFigures/MainFactorsMIRIMFASCCS.png Graphic file (type png)
 <use ExternalFigures/MainFactorsMIRIMFASCCS.png>
 Package pdftex.def Info: ExternalFigures/MainFactorsMIRIMFASCCS.png  used on in
-put line 586.
+put line 702.
 (pdftex.def)             Requested size: 308.94644pt x 231.70982pt.
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[31 <./ExternalFigures/MainFactorsMIRIMFASCCS.png>]
 
-[32]
-<ExternalFigures/screeplotMIMFASCCS.png, id=308, 1606.0pt x 1204.5pt>
+
+[36]
+
+[37 <./ExternalFigures/MainFactorsMIRIMFASCCS.png>]
+
+[38]
+<ExternalFigures/screeplotMIMFASCCS.png, id=375, 1606.0pt x 1204.5pt>
 File: ExternalFigures/screeplotMIMFASCCS.png Graphic file (type png)
 <use ExternalFigures/screeplotMIMFASCCS.png>
 Package pdftex.def Info: ExternalFigures/screeplotMIMFASCCS.png  used on input 
-line 646.
+line 762.
 (pdftex.def)             Requested size: 308.94153pt x 231.70615pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-
-[33]
-<ExternalFigures/QualiVarMIMFASCCS.png, id=314, 770.88pt x 578.16pt>
+<ExternalFigures/QualiVarMIMFASCCS.png, id=377, 770.88pt x 578.16pt>
 File: ExternalFigures/QualiVarMIMFASCCS.png Graphic file (type png)
 <use ExternalFigures/QualiVarMIMFASCCS.png>
 Package pdftex.def Info: ExternalFigures/QualiVarMIMFASCCS.png  used on input l
-ine 660.
+ine 776.
 (pdftex.def)             Requested size: 243.91064pt x 182.93298pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[34 <./ExternalFigures/screeplotMIMFASCCS.png (PNG copy)>]
+[39]
 
-[35 <./ExternalFigures/QualiVarMIMFASCCS.png (PNG copy)>]
-<ExternalFigures/IndCos2.png, id=327, 770.88pt x 578.16pt>
+[40 <./ExternalFigures/screeplotMIMFASCCS.png (PNG copy)>]
+
+[41 <./ExternalFigures/QualiVarMIMFASCCS.png (PNG copy)>]
+<ExternalFigures/IndCos2.png, id=394, 770.88pt x 578.16pt>
 File: ExternalFigures/IndCos2.png Graphic file (type png)
 <use ExternalFigures/IndCos2.png>
-Package pdftex.def Info: ExternalFigures/IndCos2.png  used on input line 684.
+Package pdftex.def Info: ExternalFigures/IndCos2.png  used on input line 800.
 (pdftex.def)             Requested size: 243.91064pt x 182.93298pt.
 
 
-[36 <./ExternalFigures/IndCos2.png (PNG copy)>]
-Overfull \hbox (2.38972pt too wide) in paragraph at lines 706--706
+[42 <./ExternalFigures/IndCos2.png (PNG copy)>]
+Overfull \hbox (2.38972pt too wide) in paragraph at lines 822--822
 []|\T1/futs/m/n/10.95 (-20) SCCS1756|  
  []
 
 
-Overfull \hbox (2.38972pt too wide) in paragraph at lines 707--707
+Overfull \hbox (2.38972pt too wide) in paragraph at lines 823--823
 []|\T1/futs/m/n/10.95 (-20) SCCS1123|  
  []
 
 
-Overfull \hbox (2.38972pt too wide) in paragraph at lines 708--708
+Overfull \hbox (2.38972pt too wide) in paragraph at lines 824--824
 []|\T1/futs/m/n/10.95 (-20) SCCS1862|  
  []
 
 
-Overfull \hbox (2.38972pt too wide) in paragraph at lines 712--712
+Overfull \hbox (2.38972pt too wide) in paragraph at lines 828--828
 []|\T1/futs/m/n/10.95 (-20) SCCS1753|  
  []
 
 
-Overfull \hbox (2.38972pt too wide) in paragraph at lines 714--714
+Overfull \hbox (2.38972pt too wide) in paragraph at lines 830--830
 []|\T1/futs/m/n/10.95 (-20) SCCS1445|  
  []
 
 
-Overfull \hbox (2.38972pt too wide) in paragraph at lines 718--718
+Overfull \hbox (2.38972pt too wide) in paragraph at lines 834--834
 []|\T1/futs/m/n/10.95 (-20) SCCS1122|  
  []
-
-[37]
-
-[38]
-
-[39]
-
-[40]
-
-[41]
-
-[42]
 
 [43]
 
@@ -1253,32 +1513,50 @@ Overfull \hbox (2.38972pt too wide) in paragraph at lines 718--718
 
 [49]
 
-[50] (./MejorandoSCCS.aux)
+[50]
+
+[51]
+
+[52]
+
+[53]
+
+[54]
+
+[55]
+
+[56] (./MejorandoSCCS.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-05-27>
+L3 programming layer <2024-07-20>
  ***********
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 20450 strings out of 473583
- 334471 string characters out of 5732343
- 1941908 words of memory out of 5000000
- 42428 multiletter control sequences out of 15000+600000
- 704558 words of font info for 442 fonts, out of 8000000 for 9000
+ 30889 strings out of 473578
+ 563650 string characters out of 5732242
+ 1941960 words of memory out of 5000000
+ 52549 multiletter control sequences out of 15000+600000
+ 727739 words of font info for 509 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,10n,93p,1202b,800s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/tex
-live/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2024/texmf-di
-st/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/
-adobe/utopia/putr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/adobe/utopia/pu
-tri8a.pfb>
-Output written on MejorandoSCCS.pdf (50 pages, 1412701 bytes).
+ 88i,10n,93p,1202b,800s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/te
+xlive/2024/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/202
+4/texmf-dist/fonts/type1/public/fourier/fourier-mlb.pfb><c:/texlive/2024/texmf-
+dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2024/texmf-dist/fo
+nts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2024/texmf-dist/fonts/type1
+/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmib10
+.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2
+024/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2024/texmf-dist/
+fonts/type1/adobe/utopia/putbi8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/ad
+obe/utopia/putr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/adobe/utopia/putr
+i8a.pfb>
+Output written on MejorandoSCCS.pdf (56 pages, 1477978 bytes).
 PDF statistics:
- 516 PDF objects out of 1000 (max. 8388607)
- 419 compressed objects within 5 object streams
- 105 named destinations out of 1000 (max. 500000)
- 80042 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 623 PDF objects out of 1000 (max. 8388607)
+ 505 compressed objects within 6 object streams
+ 137 named destinations out of 1000 (max. 500000)
+ 88254 words of extra memory for PDF output out of 89155 (max. 10000000)
 
